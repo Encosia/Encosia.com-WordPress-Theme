@@ -2,7 +2,7 @@ body {
 	font: 75%/150% "Trebuchet MS", Tahoma, Arial;
 	color: #333;
 	background: #E4EFF4;
-  background-image: url(images/main-bg.gif); 
+  background-image: url(/blog/wp-content/themes/encosia/images/main-bg.gif); 
 	margin: 0px;
 	padding: 0px 0px 40px;
 	line-height: 1.6em;
@@ -276,6 +276,7 @@ blockquote p { padding-bottom: 0px; }
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 15 : 0);
+	clear: both;
 }
 
 .wp_syntax table { border-collapse: collapse; }
