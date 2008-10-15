@@ -17,10 +17,7 @@ var clicky_custom_session = { username: clicky_get_cookie('comment_author_f0a237
 <script src="http://static.getclicky.com/34742.js" type="text/javascript"></script>
 <noscript><p><img alt="Clicky" src="http://in.getclicky.com/34742-db5.gif" /></p></noscript>
 <!-- /Clicky Tracking Code -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
+<script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
 <script type="text/javascript">
 var pageTracker = _gat._getTracker("UA-1170191-1");
 pageTracker._initData();
@@ -28,5 +25,6 @@ pageTracker._trackPageview();
 </script>
 <?php } ?>
 <?php wp_footer(); ?>
+<!-- <?php echo(get_num_queries()); ?> queries -->
 </body>
 </html>
