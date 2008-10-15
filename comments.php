@@ -180,7 +180,7 @@ $comment_author_url = (isset($_COOKIE['comment_author_url_'. COOKIEHASH])) ? tri
 
 ?>
 <div id="addcomment" class="comment">
-<form action="http://encosia.com/blog/wp-comments-post.php" method="post" id="commentform">
+<form action="http://encosia.com/blog/encosia-comments-post.php" method="post" id="commentform">
 <div class="add">
 	<div id="reroot" style="display: none;">
 		<small><a href="#" onclick="reRoot(); return false;">
