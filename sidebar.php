@@ -23,7 +23,8 @@
     <div class="sidebarBox">
     	<h3 id="Sponsor">Sponsor</h3>
       
-      <iframe src="/blog/media/ads/LQ-336x280.html" frameborder="0" height="280" width="336" scrolling="no"></iframe>
+      <script type="text/javascript">lqm_channel=1; lqm_publisher=199; lqm_zone=1; lqm_format=7;</script>
+  		<script type="text/javascript" src="http://a.lakequincy.com/s.js"></script>
     </div>
     
     <?php if (is_single()) { ?>
@@ -48,7 +49,6 @@
       <ul>
         <li><a href="http://weblogs.asp.net/scottgu/" target="_blank">Scott Guthrie</a></li>      
         <li><a href="http://misfitgeek.com" title="Joe Stagner" target="_blank">Joe Stagner</a></li>
-        <li><a href="http://www.hanselman.com/blog/" title="Scott Hanselman&#8217;s Computer Zen" target="_blank">Scott Hanselman</a></li>
         <li><a href="http://mattberseth.com/" target="_blank">Matt Berseth</a></li>
         <li><a href="http://www.west-wind.com/WebLog/" target="_blank">Rick Strahl</a></li>        
         <li><a href="http://www.codethinked.com/" target="_blank">Justin Etheredge</a></li>
