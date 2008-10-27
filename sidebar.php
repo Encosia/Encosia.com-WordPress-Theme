@@ -23,8 +23,8 @@
     <div class="sidebarBox">
     	<h3 id="Sponsor">Sponsor</h3>
       
-      <script type="text/javascript">lqm_channel=1; lqm_publisher=199; lqm_zone=1; lqm_format=7;</script>
-  		<script type="text/javascript" src="http://a.lakequincy.com/s.js"></script>
+			<script type="text/javascript">lqm_channel=1; lqm_publisher=199; lqm_zone=1; lqm_format=7;</script>
+      <script type="text/javascript" src="http://a.lakequincy.com/s.js"></script>
     </div>
     
     <?php if (is_single()) { ?>

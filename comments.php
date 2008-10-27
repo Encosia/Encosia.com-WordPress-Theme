@@ -32,9 +32,7 @@ if (($is_new) or ($withcomments) or ($single)) {
 			$tablecomments = $wpdb->comments;
 			$comments = $wpdb->get_results("SELECT * FROM $tablecomments WHERE comment_post_ID = '$id' AND comment_approved = '1' ORDER BY comment_date");
 ?>
-
-<!-- You can start editing here. -->
-
+<script type="text/javascript" src="/blog/includes/threadedcomments.js"></script>
 <?php
 $GLOBALS['threaded_comments'] = array();
 
@@ -45,13 +43,10 @@ function write_comment(&$c, $deepest_id = -1) {
 ?>
 			<div  id="div-comment-<?php echo $c->comment_ID ?>" class='comment<?php echo $odd?>'>
 				<a name='comment-<?php echo $c->comment_ID ?>' id='comment-<?php echo $c->comment_ID ?>'></a>
-				<div class="commentTitle">
-					<img class="collapseicon" src="http://encosia.com/blog/images/spacer.png" onclick='collapseThread("div-comment-<?php echo $c->comment_ID ?>")' />
-					<cite><?php comment_type(); ?> <?php _e('by'); ?> <?php comment_author_link() ?><a href="#comment-<?php echo $c->comment_ID ?>"></a></cite> 
-					<?php 
+				<div class="commentTitle"><?php comment_author_link() ?><a href="#comment-<?php echo $c->comment_ID ?>"></a> <?php 
 						if(function_exists('comment_subscription_status')) { 
 							if (comment_subscription_status()) { 
-								echo "<img alt='Subscribed to comments via email' src='http://encosia.com/blog/images/comment-subscription.png' />"; 
+								echo "<img alt='Subscribed to comments via email' src='http://encosia.com/blog/images/comment-subscription.png' width='21' height='8' />"; 
 							} 
 						}
 					?>

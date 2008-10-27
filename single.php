@@ -28,9 +28,8 @@
         <div id="comment-guide">
             <h3>What do you think?  Your comments are welcomed.</h3>
             <p>I appreciate all of your comments, questions, and other feedback, but please try to stay on topic.  If you have a question 
-            	unrelated to this post, I recommend posting on the <a href="http://forums.asp.net/" rel="nofollow">ASP.NET forums</a>.  
-            	If you post there and then <a href="http://encosia.com/contact/">contact me</a> with a link to the post, 
-            	I'll try to take a look at it for you.</p>
+            	unrelated to this post, I recommend posting on the <a href="http://forums.asp.net/" rel="nofollow" target="_blank">ASP.NET forums</a> or
+              <a href="http://stackoverflow.com" rel="nofollow" target="_blank">Stack Overflow</a> instead.</p>
             <p>If you're replying to an existing comment, please use the threading feature.  To do this, click the 
             	"Reply to this comment" link underneath the comment you're replying to.</p>
 		</div>
