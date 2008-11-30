@@ -15,7 +15,7 @@
         <li><a href="http://encosia.com/2008/03/27/using-jquery-to-consume-aspnet-json-web-services/">Using jQuery to Consume ASP.NET JSON Web Services</a></li>
         <li><a href="http://encosia.com/2008/02/05/boost-aspnet-performance-with-deferred-content-loading/">Boost ASP.NET performance with deferred content loading</a></li>
         <li><a href="http://encosia.com/2007/10/24/are-you-making-these-3-common-aspnet-ajax-mistakes/">Are you making these 3 common ASP.NET AJAX mistakes</a></li>        
-        <li><a href="http://encosia.com/2008/01/09/4-aspnet-ajax-javascript-ui-functions-you-should-learn/">4 ASP.NET AJAX JavaScript UI methods you should learn</a></li>
+        <li><a href="http://encosia.com/2008/05/29/using-jquery-to-directly-call-aspnet-ajax-page-methods/">Using jQuery to directly call ASP.NET AJAX page methods</a></li>
         <li><a href="http://encosia.com/2007/07/25/display-data-updates-in-real-time-with-ajax/">Display data updates in real-time with AJAX</a></li>        
       </ul>
     </div>
