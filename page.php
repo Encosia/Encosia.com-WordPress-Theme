@@ -6,11 +6,8 @@
     <div class="post" id="post-<?php the_ID(); ?>">
         <div class="page-content">
         	<?php if ( is_child('downloads') && !is_page('downloads') ) { ?>
-	    	<div class="page-heading">
-            	<div id="title"><h2><?php the_title(); ?></h2></div>
-        		<div id="byline"><span><em>by:</em> <strong><?php the_author(); ?></strong></span></div>
-	        </div>
-		    <?php } ?>
+          <h2><?php the_title(); ?></h2>
+		    	<?php } ?>
 			<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 
 			<?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
