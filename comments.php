@@ -32,7 +32,7 @@ if (($is_new) or ($withcomments) or ($single)) {
 			$tablecomments = $wpdb->comments;
 			$comments = $wpdb->get_results("SELECT * FROM $tablecomments WHERE comment_post_ID = '$id' AND comment_approved = '1' ORDER BY comment_date");
 ?>
-<script type="text/javascript" src="/blog/includes/threadedcomments.js"></script>
+<script type="text/javascript" src="/blog/includes/threadedcomments.min.js"></script>
 <?php
 $GLOBALS['threaded_comments'] = array();
 
