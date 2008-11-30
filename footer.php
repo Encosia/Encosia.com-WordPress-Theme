@@ -28,6 +28,5 @@ pageTracker._trackPageview();
 <!-- /Google Analytics Code -->
 <?php } ?>
 <?php wp_footer(); ?>
-<!-- <?php echo(get_num_queries()); ?> queries -->
 </body>
 </html>
