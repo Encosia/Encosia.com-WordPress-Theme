@@ -6,54 +6,51 @@
       </form>
     </div>
     
+    <div id="RSS" class="sidebarBox">
+      <div>
+          <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=654672&amp;loc=en_US" rel="nofollow"><img src="http://i.encosia.com/blog/images/email-icon-trans.png" alt="Subscribe via email" width="38" height="38" align="middle" /></a>
+          <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=654672&amp;loc=en_US" rel="nofollow" class="connectLink">Get free email updates</a><br />
+      </div>
+      
+      <div>
+        <a href="http://feeds.encosia.com/Encosia" rel="nofollow"><img src="http://i.encosia.com/blog/images/rss-icon-trans.png" alt="Subscribe via RSS" width="38" height="38" align="middle" /></a>
+        <a href="http://feeds.encosia.com/Encosia" rel="nofollow" class="connectLink">Subscribe to the RSS feed</a><br />
+      </div>
+    </div>
+
+    <div id="Twitter" class="sidebarBox">
+      <a href="http://twitter.com/Encosia" rel="nofollow" target="_blank"><img src="http://i.encosia.com/blog/images/twitter-icon-trans.png" alt="Follow me on Twitter" width="38" height="38" align="middle" /></a>
+      <a href="http://twitter.com/Encosia" rel="nofollow" target="_blank" class="connectLink">Follow my updates on Twitter</a>
+    </div>
+
+    <div id="adzerk" class="sidebarBox">
+        <div id="adzerk_ad_div"></div>
+        <p id="adzerk_by"><a href="http://theloungenet.com">Ads by The Lounge</a></p>
+    </div>
+
     <div class="sidebarBox">
       <h3 id="MostPopular">Most Popular Posts</h3>
       
       <ul>
-      	<li><a href="http://encosia.com/2007/07/13/easily-refresh-an-updatepanel-using-javascript/">Easily Refresh an UpdatePanel using JavaScript</a></li>
-        <li><a href="http://encosia.com/2007/07/11/why-aspnet-ajax-updatepanels-are-dangerous/">Why ASP.NET AJAX UpdatePanels are dangerous</a></li>
         <li><a href="http://encosia.com/2008/03/27/using-jquery-to-consume-aspnet-json-web-services/">Using jQuery to Consume ASP.NET JSON Web Services</a></li>
-        <li><a href="http://encosia.com/2008/02/05/boost-aspnet-performance-with-deferred-content-loading/">Boost ASP.NET performance with deferred content loading</a></li>
-        <li><a href="http://encosia.com/2007/10/24/are-you-making-these-3-common-aspnet-ajax-mistakes/">Are you making these 3 common ASP.NET AJAX mistakes</a></li>        
         <li><a href="http://encosia.com/2008/05/29/using-jquery-to-directly-call-aspnet-ajax-page-methods/">Using jQuery to directly call ASP.NET AJAX page methods</a></li>
-        <li><a href="http://encosia.com/2007/07/25/display-data-updates-in-real-time-with-ajax/">Display data updates in real-time with AJAX</a></li>        
+        <li><a href="http://encosia.com/2008/12/10/3-reasons-why-you-should-let-google-host-jquery-for-you/">3 reasons why you should let Google host jQuery for you</a></li> 
+        <li><a href="http://encosia.com/2007/07/11/why-aspnet-ajax-updatepanels-are-dangerous/">Why ASP.NET AJAX UpdatePanels are dangerous</a></li>
+        <li><a href="http://encosia.com/2008/06/05/3-mistakes-to-avoid-when-using-jquery-with-aspnet-ajax/">3 mistakes to avoid when using jQuery with ASP.NET AJAX</a></li>
+		    <li><a href="http://encosia.com/2009/09/21/updated-see-how-i-used-firebug-to-learn-jquery/">Updated: See how I used Firebug to learn jQuery</a></li>
+        <li><a href="http://encosia.com/2009/07/21/simplify-calling-asp-net-ajax-services-from-jquery/">Simplify calling ASP.NET AJAX services from jQuery</a></li>
       </ul>
     </div>
     
-    <div class="sidebarBox">
-    	<h3 id="Sponsor">Sponsor</h3>
-      
-			<script type="text/javascript">lqm_channel=1; lqm_publisher=199; lqm_zone=1; lqm_format=7;</script>
-      <script type="text/javascript" src="http://a.lakequincy.com/s.js"></script>
-    </div>
-    
-    <?php if (is_single()) { ?>
+		<div class="sidebarBox">
+			<a href="http://tekpub.com/view/jquery/1?ref=encosia"><img src="/blog/images/mastering-jquery-slide.jpg" width="336" height="163" alt="Mastering jQuery at TekPub" /></a>
+		</div>
+		
+		<?php if (is_single()) { ?>	
     <div class="sidebarBox">
       <h3 id="SimilarPosts">Similar Posts</h3>
       
       <?php similar_posts('limit=7'); ?> 
-    </div>
-    <?php } ?>
-    
-    <div class="sidebarBox">
-      <h3 id="Categories">Categories</h3>
-      
-      <ul>
-      <?php wp_list_categories('orderby=count&order=desc&title_li=&show_count=1&number=6'); ?>
-      </ul>
-    </div>
-    
-    <?php if (is_home()) { ?>   
-    <div class="sidebarBox">
-      <h3 id="Blogroll">Recommended .NET blogs:</h3>       
-      <ul>
-        <li><a href="http://weblogs.asp.net/scottgu/" target="_blank">Scott Guthrie</a></li>      
-        <li><a href="http://misfitgeek.com" title="Joe Stagner" target="_blank">Joe Stagner</a></li>
-        <li><a href="http://mattberseth.com/" target="_blank">Matt Berseth</a></li>
-        <li><a href="http://www.west-wind.com/WebLog/" target="_blank">Rick Strahl</a></li>        
-        <li><a href="http://www.codethinked.com/" target="_blank">Justin Etheredge</a></li>
-        <li><a href="http://stevenharman.net/blog/Default.aspx" target="_blank">Steven Harman</a></li>
-      </ul>
     </div>
     <?php } ?>
   </div>
