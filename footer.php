@@ -1,7 +1,7 @@
       <div id="footer"></div>
     </div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/blog/includes/encosia.js?v=1.1"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/blog/includes/encosia.min.js"></script>
     <script type="text/javascript" src="http://engine.theloungenet.com/Server/DOTNET/ENCOSIA/NOCSS"></script>
 <?php if(!current_user_can("manage_options")) { ?>
     <!-- Clicky -->

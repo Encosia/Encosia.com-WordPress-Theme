@@ -11,31 +11,36 @@
 			<?php the_content(''); ?>
 		</div>
 		
-        <div id="post-similarposts">
-            <h3>Similar posts</h3>
-            <?php related_posts(); ?>
+    <div id="post-similarposts">
+        <h3>Similar posts</h3>
+        <?php related_posts(); ?>
+    </div>
+
+    <div id="post-share">
+        <h3>Share this</h3>
+
+        <iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;layout=box_count&amp;show_faces=true&amp;width=46&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:46px; height:65px;" allowTransparency="true"></iframe>
+
+        <a class="delicious-button" href="http://delicious.com/save">
+           <!-- {
+           url:"<?php the_permalink() ?>",
+           title:"<?php the_title(); ?>"
+           } -->
+           Save on Delicious
+        </a>
+
+        <div id="post-share-twitter">
+          <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Encosia">Tweet</a>
+          <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
         </div>
-        
-        <div id="post-share">
-            <h3>Share this post</h3>
-            
-            <div id="post-share-twitter">
-				<script type="text/javascript">tweetmeme_source = 'Encosia'; tweetmeme_style = 'compact';</script>  
-                <script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
-			</div>
-            
-            <div id="post-share-dnk">
-				<?php if ($post->ID < 52) { $kick_url = str_replace("http://encosia.com", "http://encosia.com/index.php", get_permalink()); } else { $kick_url = get_permalink(); } ?>
-                <a href="http://www.dotnetkicks.com/kick/?url=<?php echo $kick_url ?>" rel="nofollow"><img border="0" width="82" height="18" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=<?php echo $kick_url ?>"/></a>
-            </div>
-        </div>  
-        
-        <div id="comment-guide">
-            <h3>What do you think?  Your comments are welcome.</h3>
-            <p>I appreciate all of your comments, questions, and other feedback, but please try to stay on topic.  If you have a question 
-            	unrelated to this post, I recommend posting on the <a href="http://forums.asp.net/" rel="nofollow" target="_blank">ASP.NET forums</a> instead.</p>
-            <p>If you're replying to an existing comment, please use the threading feature.  To do this, click the 
-            	"Reply to this" link underneath the comment you're replying to.</p>
+    </div>
+
+    <div id="comment-guide">
+        <h3>What do you think?  Your comments are welcome.</h3>
+        <p>I appreciate all of your comments, questions, and other feedback, but please try to stay on topic.  If you have a question
+          unrelated to this post, I recommend posting on the <a href="http://forums.asp.net/" rel="nofollow" target="_blank">ASP.NET forums</a> instead.</p>
+        <p>If you're replying to an existing comment, please use the threading feature.  To do this, click the
+          "Reply to this" link underneath the comment you're replying to.</p>
 		</div>
            
     <div id="post-commentblock">

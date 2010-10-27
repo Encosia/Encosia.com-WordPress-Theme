@@ -3,7 +3,7 @@
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title><?php wp_title(); ?></title>
-  <link rel="stylesheet" href="http://encosia.com/blog/wp-content/themes/encosia/style.css?v=3.84" type="text/css" media="screen" />
+  <link rel="stylesheet" href="http://encosia.com/blog/wp-content/themes/encosia/style.css?v=42" type="text/css" media="screen" />
   <!--[if lt IE 7]>
   <script defer type="text/javascript" src="http://encosia.com/blog/includes/pngfix.js"></script>
   <![endif]-->
@@ -14,6 +14,9 @@
   <?php wp_head(); ?>
   <?php if (is_single()) { ?>
   <link rel="shorturl" href="http://encosia.com/<?php the_ID(); ?>" />
+  <?php } ?>
+  <?php if (is_attachment()) { ?>
+  <link rel="stylesheet" href="/blog/includes/colorbox/colorbox.css" />  
   <?php } ?>
 </head>
 <body>
