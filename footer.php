@@ -1,8 +1,10 @@
       <div id="footer"></div>
     </div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-    <script type="text/javascript" src="/blog/includes/encosia.min.js"></script>
-    <script type="text/javascript" src="http://engine.theloungenet.com/Server/DOTNET/ENCOSIA/NOCSS"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/blog/includes/encosia.min.js?v=5"></script>
+    <script type="text/javascript" src='http://cdn1.lakequincy.com/m.min.js?dt=2.3.110104.1'></script>
+    <script type="text/javascript"> if($.LqmAds){$.LqmAds();$('#lqdmrd').hide();}</script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 <?php if(!current_user_can("manage_options")) { ?>
     <!-- Clicky -->
     <script type="text/javascript">

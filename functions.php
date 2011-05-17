@@ -5,6 +5,8 @@ remove_action('wp_head', 'parent_post_rel_link');
 remove_action('wp_head', 'start_post_rel_link');
 remove_action('wp_head', 'adjacent_posts_rel_link');
 remove_action('wp_head', 'wp_generator');
+remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+remove_action('wp_head', 'rel_canonical');
 
 // Custom callback to list comments in the your-theme style
 function custom_comments($comment, $args, $depth) {
@@ -19,11 +21,9 @@ function custom_comments($comment, $args, $depth) {
 
             <div class="comment-content"><?php comment_text() ?></div>
 
-            <?php comment_reply_link(array_merge($args, array(
-                    'reply_text' => 'Reply to this',
-                    'depth' => $depth
-                  )));
-            ?>
+            <a class="comment-reply-link" href="#" rel="nofollow"
+               onclick="return addComment.moveForm('comment-<?php comment_ID() ?>', '<?php comment_ID() ?>', 'respond', '<?php the_ID() ?>')">Reply to this comment</a>
+
             <?php edit_comment_link('(edit)'); ?>            
 <?php }
 // Custom callback to list pings
@@ -33,7 +33,7 @@ function custom_pings($comment, $args, $depth) {
             <li><?php comment_author_link() ?>
 <?php }
 
-add_filter('comment_text', 'pre_esc_html', 9);
+add_filter('pre_comment_content', 'pre_esc_html');
 
 function pre_esc_html($comment) {
   return preg_replace_callback(
@@ -49,20 +49,10 @@ function pre_esc_html($comment) {
 /* add new rewrite rule */
 function attachment_rewrite( $wp_rewrite ) {
     $rule = array(
-        'attachment/(.+)' => 'index.php?attachment_id=' . $wp_rewrite->preg_index(1)
+        'attachment/([0-9]+)' => 'index.php?attachment_id=' . $wp_rewrite->preg_index(1)
     );
 
     $wp_rewrite->rules = $rule + $wp_rewrite->rules;
 }
 add_filter( 'generate_rewrite_rules', 'attachment_rewrite' );
-
-/* redirect standard wordpress attachments urls to new format */
-function redirect_old_attachment() {
-    global $wp;
-
-    if( !preg_match( '/^attachment\/(.*)/', $wp->request ) && isset( $wp->query_vars['attachment'] ) ) {
-        wp_redirect( site_url( '/attachment/' . $wp->query_vars['attachment'] ) , 301 );
-    }
-}
-add_filter( 'template_redirect', 'redirect_old_attachment' );
 ?>

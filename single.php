@@ -17,22 +17,19 @@
     </div>
 
     <div id="post-share">
-        <h3>Share this</h3>
+      <h3>Share this</h3>
 
-        <iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;layout=box_count&amp;show_faces=true&amp;width=46&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:46px; height:65px;" allowTransparency="true"></iframe>
+      <div id="post-share-twitter">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Encosia">Tweet</a>
+      </div>
 
-        <a class="delicious-button" href="http://delicious.com/save">
-           <!-- {
-           url:"<?php the_permalink() ?>",
-           title:"<?php the_title(); ?>"
-           } -->
-           Save on Delicious
-        </a>
-
-        <div id="post-share-twitter">
-          <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Encosia">Tweet</a>
-          <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-        </div>
+      <a class="delicious-button" href="http://delicious.com/save">
+         <!-- {
+         url:"<?php the_permalink() ?>",
+         title:"<?php the_title(); ?>"
+         } -->
+         Save on Delicious
+      </a>
     </div>
 
     <div id="comment-guide">

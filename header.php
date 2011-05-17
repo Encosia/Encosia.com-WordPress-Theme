@@ -3,7 +3,7 @@
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title><?php wp_title(); ?></title>
-  <link rel="stylesheet" href="http://encosia.com/blog/wp-content/themes/encosia/style.css?v=42" type="text/css" media="screen" />
+  <link rel="stylesheet" href="http://encosia.com/blog/wp-content/themes/encosia/style.css?v=47" type="text/css" media="screen" />
   <!--[if lt IE 7]>
   <script defer type="text/javascript" src="http://encosia.com/blog/includes/pngfix.js"></script>
   <![endif]-->
@@ -13,7 +13,7 @@
   <link rel="pingback" href="http://encosia.com/blog/xmlrpc.php" />
   <?php wp_head(); ?>
   <?php if (is_single()) { ?>
-  <link rel="shorturl" href="http://encosia.com/<?php the_ID(); ?>" />
+  <link rel="shortlink" href="http://encosia.com/<?php echo $post->ID; ?>" />
   <?php } ?>
   <?php if (is_attachment()) { ?>
   <link rel="stylesheet" href="/blog/includes/colorbox/colorbox.css" />  
@@ -26,9 +26,7 @@
       <h1><a href="http://encosia.com"><img src="http://i.encosia.com/blog/images/encosia-logo-trans.png" height="100" width="312" alt="Encosia - ASP.NET, AJAX, jQuery, and more" title="Encosia - ASP.NET, AJAX, jQuery, and more" /></a></h1>
     </div>
     
-    <div id="RSSBlock">
-      <a href="http://feeds.encosia.com/Encosia" rel="nofollow" target="_blank"><img src="http://feeds.feedburner.com/~fc/Encosia?bg=F78B21&amp;fg=000000" height="26" width="88" border="0" title="Everyone else is doing it.  What are you waiting on?" alt="Encosia RSS feed count" /></a>
-    </div>
+    <div id="RSSBlock"></div>
     
     <ul id="nav">
       <li><a href="http://encosia.com/about-dave-ward/" title="About">About</a></li>

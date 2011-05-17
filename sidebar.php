@@ -1,10 +1,13 @@
   <div id="sidebar">
-  	<div id="SearchBlock">
-      <form method="get" id="searchform" action="http://encosia.com/">
-        <input type="text" class="search" value="" name="s" id="s" />
-        <input type="submit" id="searchsubmit" value="Search" />
-      </form>
+    <?php if(!is_page(17)) { ?>
+    <div id="About" class="sidebarBox">
+      <a href="/about-dave-ward/"><img src="/blog/images/me-sidebar.jpg" alt="Dave Ward" width="150" height="173" align="right" /></a>
+
+      <p><strong>Welcome</strong>! I hope you're in the process of finding something useful here.</p>
+
+      <p>You can keep up with my latest updates by clicking below to follow me on Twitter and/or subscribing via RSS or Email.</p>      
     </div>
+    <?php } ?>
     
     <div id="RSS" class="sidebarBox">
       <div>
@@ -18,14 +21,16 @@
       </div>
     </div>
 
+    <div id="lqdmad">
+      <div class="lqm_ad"  lqm_channel="1" lqm_publisher="199" lqm_zone="1" lqm_format="20"></div>
+
+      <div id="lqdmrd"><a href="http://lakequincy.com/devmavens">Microsoft Advertising</a> loading...</div>
+      <p class="dmAdText" style="text-align: right;"><a href="http://lakequincy.com/devmavens">Ads Via Dev<b>Mavens</b></a></p>
+    </div>
+
     <div id="Twitter" class="sidebarBox">
       <a href="http://twitter.com/Encosia" rel="nofollow" target="_blank"><img src="http://i.encosia.com/blog/images/twitter-icon-trans.png" alt="Follow me on Twitter" width="38" height="38" align="middle" /></a>
       <a href="http://twitter.com/Encosia" rel="nofollow" target="_blank" class="connectLink">Follow my updates on Twitter</a>
-    </div>
-
-    <div id="adzerk" class="sidebarBox">
-        <div id="adzerk_ad_div"></div>
-        <p id="adzerk_by"><a href="http://theloungenet.com">Ads by The Lounge</a></p>
     </div>
 
     <div class="sidebarBox">
@@ -43,14 +48,6 @@
     </div>
     
 		<div class="sidebarBox">
-			<a href="http://tekpub.com/view/jquery/1?ref=encosia"><img src="/blog/images/mastering-jquery-slide.jpg" width="336" height="163" alt="Mastering jQuery at TekPub" /></a>
+			<a href="http://tekpub.com/productions/jquery?ref=encosia"><img src="/blog/images/mastering-jquery-slide.jpg" width="336" height="163" alt="Mastering jQuery at TekPub" /></a>
 		</div>
-		
-		<?php if (is_single()) { ?>	
-    <div class="sidebarBox">
-      <h3 id="SimilarPosts">Similar Posts</h3>
-      
-      <?php similar_posts('limit=7'); ?> 
-    </div>
-    <?php } ?>
   </div>

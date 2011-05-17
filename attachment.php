@@ -1,10 +1,10 @@
 <?php get_header(); ?>
   <div id="content" class="attachment">
 
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  <?php if (have_posts()) : ?>
 
-    <div class="post" id="post-<?php the_ID(); ?>">
-        <h2><a href="<?php echo get_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+    <div class="post" id="post-<?php echo $post->ID; ?>">
+        <h2><a href="http://encosia.com/attachment/<?php echo $post->ID; ?>/" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<!--<span class="post-cat"><?php the_category(', ') ?></span>
 		<span class="post-calendar">By <strong><a href="/about-dave-ward/" title="About Dave Ward">Dave Ward</a></strong> on <?php the_time('F jS, Y') ?></span>-->
 		<div class="post-content">
@@ -25,15 +25,6 @@
     </script>
 
     <div id="post-share">
-      <!--<div id="twitter-share">
-        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="encosia" data-url="http://encosia.com/attachment/<?php the_ID(); ?>/">tweet</a>
-        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-      </div>
-
-      <div id="facebook-like">
-        <iframe src="http://www.facebook.com/plugins/like.php?href=http://encosia.com/attachment/<?php the_ID(); ?>/&amp;layout=standard&amp;show_faces=false&amp;width=46&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:46px; height:65px;" allowTransparency="true"></iframe>
-      </div>-->
-
       <span class="st_sharethis_large" displayText="Share"></span>
       <span class="st_stumbleupon_large" displayText="Stumble"></span>
       <span class="st_facebook_large" displayText="Facebook"></span>
@@ -42,9 +33,13 @@
     </div>
 
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher:'d3b4c138-8ce7-48cc-8564-c98c0bcb0ff3'});</script>
+    <script type="text/javascript">
+      stLight.options({
+        publisher:'d3b4c138-8ce7-48cc-8564-c98c0bcb0ff3'
+      });
+    </script>
 
-		<?php endwhile; else: ?>
+		<?php else: ?>
 
 		<p>Sorry, no posts matched your criteria.</p>
 
