@@ -37,13 +37,13 @@
       <h3 id="MostPopular">Most Popular Posts</h3>
       
       <ul>
-        <li><a href="http://encosia.com/2008/03/27/using-jquery-to-consume-aspnet-json-web-services/">Using jQuery to Consume ASP.NET JSON Web Services</a></li>
-        <li><a href="http://encosia.com/2008/05/29/using-jquery-to-directly-call-aspnet-ajax-page-methods/">Using jQuery to directly call ASP.NET AJAX page methods</a></li>
-        <li><a href="http://encosia.com/2008/12/10/3-reasons-why-you-should-let-google-host-jquery-for-you/">3 reasons why you should let Google host jQuery for you</a></li> 
-        <li><a href="http://encosia.com/2007/07/11/why-aspnet-ajax-updatepanels-are-dangerous/">Why ASP.NET AJAX UpdatePanels are dangerous</a></li>
-        <li><a href="http://encosia.com/2008/06/05/3-mistakes-to-avoid-when-using-jquery-with-aspnet-ajax/">3 mistakes to avoid when using jQuery with ASP.NET AJAX</a></li>
-		    <li><a href="http://encosia.com/2009/09/21/updated-see-how-i-used-firebug-to-learn-jquery/">Updated: See how I used Firebug to learn jQuery</a></li>
-        <li><a href="http://encosia.com/2009/07/21/simplify-calling-asp-net-ajax-services-from-jquery/">Simplify calling ASP.NET AJAX services from jQuery</a></li>
+        <li><a href="http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/">3 reasons why you should let Google host jQuery for you</a></li>
+        <li><a href="http://encosia.com/using-jquery-to-consume-aspnet-json-web-services/">Using jQuery to Consume ASP.NET JSON Web Services</a></li>
+        <li><a href="http://encosia.com/using-jquery-to-directly-call-aspnet-ajax-page-methods/">Using jQuery to directly call ASP.NET AJAX page methods</a></li>
+        <li><a href="http://encosia.com/in-javascript-curly-brace-placement-matters-an-example/">In JavaScript, curly brace placement matters: An example</a></li>
+        <li><a href="http://encosia.com/document-ready-and-pageload-are-not-the-same/">$(document).ready() and pageLoad() are not the same!</a></li>
+        <li><a href="http://encosia.com/3-mistakes-to-avoid-when-using-jquery-with-aspnet-ajax/">3 mistakes to avoid when using jQuery with ASP.NET AJAX</a></li>
+        <li><a href="http://encosia.com/dont-let-jquerys-document-ready-slow-you-down/">Don't let jQuery's $(document).ready() slow you down</a></li>
       </ul>
     </div>
     

@@ -19,13 +19,35 @@
     <div id="post-share">
       <h3>Share this</h3>
 
+<?php
+  // Changed URL structure from /yyyy/mm/dd/slug to /slug on 5/28/2011.
+  //  This ensures older posts still present the old URLs to sharing
+  //  services so that share counts are maintained.
+  // If this needs to change to an ID test later, the last post under
+  //  the the old URLs was #1111.
+  $post_date = strtotime(get_the_date());
+  $url_change_date = strtotime("5/28/2011");
+
+  $sharing_url = get_permalink();
+
+  if ($post_date < $url_change_date) {
+    $url_date_prefix = "/" . date("Y", $post_date) .
+                       "/" . date("m", $post_date) .
+                       "/" . date("d", $post_date);
+
+    $sharing_url = str_replace("://encosia.com",
+                               "://encosia.com" . $url_date_prefix,
+                               $sharing_url);
+  }
+?>
+
       <div id="post-share-twitter">
-        <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Encosia">Tweet</a>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Encosia" data-url="<?php echo $sharing_url; ?>">Tweet</a>
       </div>
 
       <a class="delicious-button" href="http://delicious.com/save">
          <!-- {
-         url:"<?php the_permalink() ?>",
+         url:"<?php echo $sharing_url; ?>",
          title:"<?php the_title(); ?>"
          } -->
          Save on Delicious
