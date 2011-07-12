@@ -1,10 +1,15 @@
       <div id="footer"></div>
     </div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/blog/includes/encosia.min.js?v=5"></script>
-    <script type="text/javascript" src='http://cdn1.lakequincy.com/m.min.js?dt=2.3.110104.1'></script>
-    <script type="text/javascript"> if($.LqmAds){$.LqmAds();$('#lqdmrd').hide();}</script>
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="/blog/includes/colorbox/jquery.colorbox-min.js"></script>
+    <script>
+      $('a[rel=attachment]').colorbox();
+    </script>
+    <script src="/blog/includes/encosia.min.js?v=7"></script>
+    <script src='http://cdn1.lakequincy.com/m.min.js?dt=2.3.110104.1'></script>
+    <script> if($.LqmAds){$.LqmAds();$('#lqdmrd').hide();}</script>
+    <script src="http://platform.twitter.com/widgets.js"></script>
+    <script src="https://apis.google.com/js/plusone.js"></script>
 <?php if(!current_user_can("manage_options")) { ?>
     <!-- Clicky -->
     <script type="text/javascript">

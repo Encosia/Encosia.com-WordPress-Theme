@@ -18,12 +18,6 @@
       <div class="entry-caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt() ?></div>
 		</div>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-    <script type="text/javascript" src="/blog/includes/colorbox/jquery.colorbox-min.js"></script>
-    <script type="text/javascript">
-      $('a[rel=attachment]').colorbox();
-    </script>
-
     <div id="post-share">
       <span class="st_sharethis_large" displayText="Share"></span>
       <span class="st_stumbleupon_large" displayText="Stumble"></span>
@@ -38,6 +32,18 @@
         publisher:'d3b4c138-8ce7-48cc-8564-c98c0bcb0ff3'
       });
     </script>
+
+    <div class="previous-image">
+      <span class="previous-image-link"><?php previous_image_link('thumbnail', '&laquo; Previous Image'); ?></span>
+
+      <?php previous_image_link() ?>
+    </div>
+
+    <div class="next-image">
+      <span class="next-image-link"><?php next_image_link('thumbnail', 'Next Image &raquo;'); ?></span>
+
+      <?php next_image_link(); ?>
+    </div>
 
 		<?php else: ?>
 
