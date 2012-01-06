@@ -2,8 +2,9 @@
 <html>
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <title><?php wp_title(); ?></title>
-  <link rel="stylesheet" href="http://encosia.com/blog/wp-content/themes/encosia/style.css?v=51" type="text/css" media="screen" />
+  <link rel="stylesheet" href="http://encosia.com/blog/wp-content/themes/encosia/style.css?v=59" type="text/css" media="screen" />
   <!--[if lt IE 7]>
   <script defer type="text/javascript" src="http://encosia.com/blog/includes/pngfix.js"></script>
   <![endif]-->
