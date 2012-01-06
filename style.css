@@ -176,7 +176,7 @@ code {
   padding-bottom: 3px;
 }
 
-.post-content h4 {
+.post-content h4, .page-content h4 {
   border-bottom: 1px solid #ddd;
   color: #000;
   font-size: 120%;
@@ -334,6 +334,7 @@ code {
   }
 
   .attachment .previous-image-link {
+    clear: both;
     float: left;
     margin-bottom: 5px;
   }
@@ -343,11 +344,12 @@ code {
 }
 
   .attachment .next-image a {
-    float: left;
+    float: right;
     clear: both;
   }
 
   .attachment .next-image-link {
+    clear: both;
     float: right;
     margin-bottom: 5px;
   }
@@ -493,7 +495,7 @@ code {
   margin-top: 3px;
 }
 
-#addComment {
+#addComment, .generalButton {
   width: 150px;
   padding: 5px;
   margin: 5px 0 4px 0;
@@ -599,23 +601,40 @@ code {
 #RSS, #Twitter {
   border: 1px solid #bbb;
   float: left;
+}
+
+#Twitter {
   padding: 5px;
   width: 324px;
+}
+
+#RSS {
+  width: 334px;
+}
+
+#RSS div, #Twitter div {
+  position: relative;
+  padding: 5px;
 }
 
 #RSS .connectLink, #Twitter .connectLink {
   font-size: 140%;
   color: #333;
   margin-left: 10px;
-}
-
-#RSS div {
   position: relative;
-  height: 38px;
-  margin-bottom: 5px;
+  top: 4px;
 }
 
-#RSS div:last-child { margin-bottom: 0; }
+#RSS div.item {
+  height: 38px;
+  border-top: 1px solid #ccc;
+}
+
+#RSS div:first-child { border-top: none; }
+
+#RSS div.fb-like > span {
+  top: 7px;
+}
 
 .sidebarBox {
   background: #f0f9ff url(/blog/images/sidebar-ul-background.png) repeat-x;
@@ -774,12 +793,3 @@ code {
         #cboxLoadingGraphic{background:url(images/loading.gif) center center no-repeat;}
         #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) -25px 0px no-repeat; width:25px; height:25px; text-indent:-9999px;}
         #cboxClose.hover{background-position:-25px -25px;}
-
-.cboxIE #cboxTopLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/internet_explorer/borderTopLeft.png, sizingMethod='scale');}
-.cboxIE #cboxTopCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/internet_explorer/borderTopCenter.png, sizingMethod='scale');}
-.cboxIE #cboxTopRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/internet_explorer/borderTopRight.png, sizingMethod='scale');}
-.cboxIE #cboxBottomLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/internet_explorer/borderBottomLeft.png, sizingMethod='scale');}
-.cboxIE #cboxBottomCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/internet_explorer/borderBottomCenter.png, sizingMethod='scale');}
-.cboxIE #cboxBottomRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/internet_explorer/borderBottomRight.png, sizingMethod='scale');}
-.cboxIE #cboxMiddleLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/internet_explorer/borderMiddleLeft.png, sizingMethod='scale');}
-.cboxIE #cboxMiddleRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/internet_explorer/borderMiddleRight.png, sizingMethod='scale');}
