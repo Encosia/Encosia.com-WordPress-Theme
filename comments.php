@@ -69,7 +69,7 @@
 <p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
 <?php else : ?>
 
-<form id="commentform" action="/blog/wp-comments-post.php" method="post">
+<form id="commentform" action="/blog/encosia-comments-post.php" method="post">
 
 <?php if ( is_user_logged_in() ) : ?>
 
