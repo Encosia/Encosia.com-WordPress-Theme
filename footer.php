@@ -1,14 +1,12 @@
       <div id="footer"></div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="/blog/includes/colorbox/jquery.colorbox-min.js"></script>
-    <script>
-      $('a[rel=attachment]').colorbox();
-    </script>
-    <script src="/blog/includes/encosia.min.js?v=7"></script>
-    <script src='http://cdn1.lakequincy.com/m.min.js?dt=2.3.110104.1'></script>
-    <script> if($.LqmAds){$.LqmAds();$('#lqdmrd').hide();}</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>if (typeof jQuery == 'undefined') { document.write(unescape('%3Cscript%20src%3D%22/blog/includes/jquery-1.7.1.min.js%22%3E%3C/script%3E')); }</script>
+    <script src="/blog/includes/plugins.min.js?v=1"></script>
+    <script src="/blog/includes/encosia.js?v=12"></script>
+    <script src="http://s1.lqcdn.com/m.min.js?dt=2.3.110104.1"></script>
     <script src="http://platform.twitter.com/widgets.js"></script>
+    <script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#appId=176723012400928&amp;xfbml=1"></script>
     <script src="https://apis.google.com/js/plusone.js"></script>
 <?php if(!current_user_can("manage_options")) { ?>
     <!-- Clicky -->
