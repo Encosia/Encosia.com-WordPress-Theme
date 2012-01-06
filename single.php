@@ -6,8 +6,23 @@
     <div class="post" id="post-<?php the_ID(); ?>">
     <h2><a href="<?php echo get_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<span class="post-cat"><?php the_category(', ') ?></span>
-		<span class="post-calendar">By <strong><a href="/about-dave-ward/" rel="author" title="About Dave Ward">Dave Ward</a></strong> on <?php the_time('F jS, Y') ?></span>
+    <span class="post-calendar">By <strong><a href="/about-dave-ward/" rel="author" title="About Dave Ward">Dave Ward</a></strong>;
+    <?php if(get_the_modified_date() == get_the_date()) { ?>
+      Posted <?php the_date() ?>
+    <?php } else { ?>
+      Updated <?php the_modified_date() ?>
+    <?php } ?></span>
 		<div class="post-content">
+            <?php if (get_post_meta(get_the_ID(), 'jQueryForASPNET', true) == 'true') { ?>
+            <div class="aside">
+                <p>Note: This post is part of a long-running series of posts covering the union of jQuery and ASP.NET:
+                  <a href="http://encosia.com/jquery-for-the-asp-net-developer/">jQuery for the ASP.NET Developer</a>.</p>
+                
+                <p>Topics in this series range all the way from using jQuery to enhance UpdatePanels to using jQuery up to
+                  completely manage rendering and interaction in the browser with ASP.NET only acting as a backend API. If the
+                  post you're viewing now is something that interests you, be sure to check out the rest of the posts in this series.</p>
+            </div>
+            <?php } ?>
 			<?php the_content(''); ?>
 		</div>
 		
@@ -53,7 +68,7 @@
          Save on Delicious
       </a>
 
-      <iframe src="http://www.facebook.com/plugins/like.php?app_id=157550590978658&amp;href&amp;send=false&amp;layout=box_count&amp;width=48&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=trebuchet+ms&amp;height=70" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:48px; height:70px;" allowTransparency="true"></iframe>
+      <iframe src="http://www.facebook.com/plugins/like.php?app_id=121134371309217&amp;href=<?php echo $sharing_url ?>&amp;=false&amp;layout=box_count&amp;width=48&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=trebuchet+ms&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:48px; height:70px;" allowTransparency="true"></iframe>
 
       <div class="g-plusone" data-size="tall" data-count="true"></div>
     </div>
