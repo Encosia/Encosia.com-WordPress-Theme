@@ -19,22 +19,22 @@
     <?php } ?>
 
     <div id="lqdmad">
-      <div class="lqm_ad"  lqm_channel="1" lqm_publisher="199" lqm_zone="1" lqm_format="20"></div>
-
-      <div id="lqdmrd"><a href="http://lakequincy.com/devmavens">Microsoft Advertising</a> loading...</div>
-      <p class="dmAdText" style="text-align: right;"><a href="http://lakequincy.com/devmavens">Ads Via Dev<b>Mavens</b></a></p>
+      <div class="lqm_ad" lqm_publisher="lqm.encosia.site" lqm_zone="ron" lqm_format="125x125" lqm_tags="JavaScript%2cWeb%2cHTML%205%2cjQuery%2cWeb"></div>
     </div>
     
     <div id="RSS" class="sidebarBox">
-      <div>
+      <div class="item">
+        <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=654672&amp;loc=en_US" rel="nofollow"><img src="http://i.encosia.com/blog/images/email-icon-trans.png" alt="Subscribe via email" width="38" height="38" align="middle" /></a>
+        <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=654672&amp;loc=en_US" rel="nofollow" class="connectLink">Get email updates when I post</a><br />
+      </div>
+
+      <div class="item">
         <a href="http://feeds.encosia.com/Encosia" rel="nofollow"><img src="http://i.encosia.com/blog/images/rss-icon-trans.png" alt="Subscribe via RSS" width="38" height="38" align="middle" /></a>
         <a href="http://feeds.encosia.com/Encosia" rel="nofollow" class="connectLink">Subscribe to the RSS feed</a><br />
       </div>
 
-      <div>
-          <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=654672&amp;loc=en_US" rel="nofollow"><img src="http://i.encosia.com/blog/images/email-icon-trans.png" alt="Subscribe via email" width="38" height="38" align="middle" /></a>
-          <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=654672&amp;loc=en_US" rel="nofollow" class="connectLink">Get email updates when I post</a><br />
-      </div>
+<!--      <div id="fb-root" style="display: none;"></div>-->
+<!--      <div class="fb-like item" data-href="https://www.facebook.com/pages/Encosia/6527548387" data-send="false" data-width="324" data-show-faces="false" data-font="trebuchet ms"></div>-->
     </div>
 
     <div id="Twitter" class="sidebarBox">
@@ -44,16 +44,8 @@
 
     <div class="sidebarBox">
       <h3 id="MostPopular">Most Popular Posts</h3>
-      
-      <ul>
-        <li><a href="http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/">3 reasons why you should let Google host jQuery for you</a></li>
-        <li><a href="http://encosia.com/using-jquery-to-consume-aspnet-json-web-services/">Using jQuery to Consume ASP.NET JSON Web Services</a></li>
-        <li><a href="http://encosia.com/using-jquery-to-directly-call-aspnet-ajax-page-methods/">Using jQuery to directly call ASP.NET AJAX page methods</a></li>
-        <li><a href="http://encosia.com/in-javascript-curly-brace-placement-matters-an-example/">In JavaScript, curly brace placement matters: An example</a></li>
-        <li><a href="http://encosia.com/document-ready-and-pageload-are-not-the-same/">$(document).ready() and pageLoad() are not the same!</a></li>
-        <li><a href="http://encosia.com/3-mistakes-to-avoid-when-using-jquery-with-aspnet-ajax/">3 mistakes to avoid when using jQuery with ASP.NET AJAX</a></li>
-        <li><a href="http://encosia.com/dont-let-jquerys-document-ready-slow-you-down/">Don't let jQuery's $(document).ready() slow you down</a></li>
-      </ul>
+
+      <?php GoogleAnalyticsPopularPosts_view(false); ?>
     </div>
     
 		<div class="sidebarBox">
