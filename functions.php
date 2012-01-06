@@ -46,13 +46,23 @@ function pre_esc_html($comment) {
   );
 }
 
-/* add new rewrite rule */
-function attachment_rewrite( $wp_rewrite ) {
-    $rule = array(
-        'attachment/([0-9]+)' => 'index.php?attachment_id=' . $wp_rewrite->preg_index(1)
-    );
+function get_image_attachment_link($link, $id) {
+  $the_real_id = explode('=', $link);
 
-    $wp_rewrite->rules = $rule + $wp_rewrite->rules;
+  $post = get_post($the_real_id[1]);
+
+  if ($post->post_type == 'attachment') {
+    return '/i/' . $post->post_name;
+  }
 }
-add_filter( 'generate_rewrite_rules', 'attachment_rewrite' );
+
+add_filter('attachment_link', 'get_image_attachment_link');
+
+function post_type_image() {
+  register_post_type('image', array(
+    'rewrite' => array('slug' => 'i/')
+  ));
+}
+
+add_action('init', 'post_type_image');
 ?>
