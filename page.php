@@ -17,6 +17,7 @@
   <?php endwhile; endif; ?>
   
   <?php if ( is_child(18) && !is_page('downloads') ) { comments_template(); } ?>
+  <?php if (is_page(1216)) { comments_template(); } ?>
 
   </div>
 
