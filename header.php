@@ -4,9 +4,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <title><?php wp_title(); ?></title>
-  <link rel="stylesheet" href="http://encosia.com/blog/wp-content/themes/encosia/style.css?v=59" type="text/css" media="screen" />
+  <link rel="stylesheet" href="http://encosia.com/blog/wp-content/themes/encosia/style.css?v=68" type="text/css" media="screen" />
+  <script type="text/javascript" src="//use.typekit.net/ndu6umd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <!--[if lt IE 7]>
   <script defer type="text/javascript" src="http://encosia.com/blog/includes/pngfix.js"></script>
+  <![endif]-->
+  <!--[if gte IE 9]>
+  <style type="text/css">
+    #sidebar h3 { filter: none; }
+  </style>
   <![endif]-->
   <link rel="alternate" type="application/rss+xml" title="Posts" href="http://feeds.encosia.com/Encosia" />
   <link rel="alternate" type="application/rss+xml" title="Comments" href="http://feeds.encosia.com/EncosiaComments" />

@@ -6,7 +6,7 @@
     <div class="post" id="post-<?php the_ID(); ?>">
     <h2><a href="<?php echo get_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<span class="post-cat"><?php the_category(', ') ?></span>
-    <span class="post-calendar">By <strong><a href="/about-dave-ward/" rel="author" title="About Dave Ward">Dave Ward</a></strong>;
+    <span class="post-calendar">By <strong><a href="/about-dave-ward/" rel="author" title="About Dave Ward">Dave Ward</a></strong>.
     <?php if(get_the_modified_date() == get_the_date()) { ?>
       Posted <?php the_date() ?>
     <?php } else { ?>
@@ -59,14 +59,6 @@
       <div id="post-share-twitter">
         <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Encosia" data-url="<?php echo $sharing_url; ?>">Tweet</a>
       </div>
-
-      <a class="delicious-button" href="http://delicious.com/save">
-         <!-- {
-         url:"<?php echo $sharing_url; ?>",
-         title:"<?php the_title(); ?>"
-         } -->
-         Save on Delicious
-      </a>
 
       <iframe src="http://www.facebook.com/plugins/like.php?app_id=121134371309217&amp;href=<?php echo $sharing_url ?>&amp;=false&amp;layout=box_count&amp;width=48&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=trebuchet+ms&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:48px; height:70px;" allowTransparency="true"></iframe>
 

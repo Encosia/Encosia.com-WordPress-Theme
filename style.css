@@ -1,7 +1,7 @@
 html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
 
 body {
-  font: 75% / 150% "Trebuchet MS", Tahoma, Arial;
+  font: 75% / 150% "Trebuchet MS", serif;
   color: #333;
   background: #E4EFF4 url(/blog/wp-content/themes/encosia/images/main-bg.gif);
   margin: 0;
@@ -22,13 +22,13 @@ strong { font-weight: bold; }
 h1 { margin: 0; padding: 0; }
 
 h2 {
+  font-family: "myriad-pro-condensed", sans-serif;
   color: #000;
   margin: 0 0 2px;
   border-bottom: 1px solid #CCCCCC;
-  letter-spacing: -2px;
-  font-size: 180%;
-  font-weight: normal;
-  padding-bottom: 3px;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 1px;
 }
 
   h2 a, h2 a:visited, h2 a:hover {
@@ -37,8 +37,9 @@ h2 {
   }
 
 h3 {
-  font-size: 140%;
-  font-weight: bold;
+  font-family: "myriad-pro-condensed", "sans-serif";
+  font-size: 22px;
+  font-weight: 600;
   color: #333;
   margin: 10px 0 5px;
 }
@@ -176,11 +177,58 @@ code {
   padding-bottom: 3px;
 }
 
+.post-content img.full-width, .post-content img.size-full {
+    border: 1px solid #ccc;
+}
+
+.post-content img.alignleft {
+  float: left;
+  margin-right: 10px;
+}
+
+.post-content img.alignright {
+  float: right;
+  margin-left: 10px;
+}
+
+.post-content .wp-caption img {
+  border: none;
+  padding: 0;
+}
+
+.post-content .wp-caption {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  text-align: center;
+  margin-bottom: 10px;
+  width: auto !important;
+}
+
+.post-content .wp-caption.alignleft {
+  float: left;
+  margin-right: 10px;
+}
+
+.post-content .wp-caption.alignright {
+  float: right;
+  margin-left: 10px;
+}
+
+.post-content .wp-caption p {
+  text-align: center;
+  font-style: italic;
+  margin: 0 5px 5px 5px;
+  padding: 0;
+}
+
 .post-content h4, .page-content h4 {
   border-bottom: 1px solid #ddd;
-  color: #000;
-  font-size: 120%;
+  color: #333;
+  font-family: "myriad-pro-condensed", sans-serif;
+  font-size: 20px;
   font-style: italic;
+  letter-spacing: 1px;
+  line-height: 18px;
   margin-bottom: 4px;
 }
 
@@ -229,6 +277,16 @@ code {
 }
 
 .page-content strong { color: #000; }
+
+/* Contact form styling */
+.wpcf7 input, .wpcf7 textarea {
+  background-color: #f0f9ff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 120%;
+  padding: 5px;
+  width: 100%;
+}
 
 .aside {
   background-color: #F0F9FF;
@@ -507,6 +565,7 @@ code {
   cursor: pointer;
 }
 
+/* Begin Sidebar */
 #sidebar {
   background: #FFF9D8;
   float: right;
@@ -516,13 +575,25 @@ code {
 }
 
 #sidebar h3 {
-  font-size: 140%;
-  color: #333;
-  text-indent: -9999px;
+  background-color: #000;
+  background: #7d7e7d; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkN2U3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZTBlMGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-8 */
+  font-family: "myriad-pro-semi-condensed", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  line-height: 30px;
   margin: 0;
+  padding-left: 6px;
   height: 30px;
-  width: 336px;
-  background-image: url(http://i.encosia.com/blog/images/sidebar-headings.png)
+  width: 330px;
 }
 
 #sidebar blockquote {
@@ -587,6 +658,17 @@ code {
   color: #eee;
 }
 
+#carbonads-container {
+  float: left;
+  margin-top: 15px;
+  margin-left: -1px;
+}
+
+div.carbonad {
+  border-width: 1px !important;
+  width: 336px !important;
+}
+
 #RSSBlock {
   position: absolute;
   right: 10px;
@@ -610,6 +692,7 @@ code {
 
 #RSS {
   width: 334px;
+  margin-bottom: 15px;
 }
 
 #RSS div, #Twitter div {
@@ -625,9 +708,17 @@ code {
   top: 4px;
 }
 
+#sidebar blockquote.twitter-tweet {
+  display: none;
+}
+
 #RSS div.item {
   height: 38px;
   border-top: 1px solid #ccc;
+}
+
+#sidebar #twitter-widget-0 {
+  margin-bottom: -5px;
 }
 
 #RSS div:first-child { border-top: none; }
@@ -644,24 +735,18 @@ code {
 }
 
 #lqdmad {
-  min-height: 100px;
   text-align: left;
   float: left;
   margin-top: 15px;
-  width: 336px;
-}
-#lqdmad p {
-  padding: 6px 0;
+  margin-left: 17px;
+  width: 300px;
+  height: 250px;
 }
 
 #lqdmad .dmAdImg, #lqdmad iframe {
   margin: 2px 10px 7px 0;
   float: left;
   border: 1px solid #CCC;
-}
-#lqdmad .dmAdText {
-  margin: 0;
-  padding-right: 6px;
 }
 
 #MostPopular { background-position: 0 -5px; }

@@ -1,14 +1,27 @@
       <div id="footer"></div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>if (typeof jQuery == 'undefined') { document.write(unescape('%3Cscript%20src%3D%22/blog/includes/jquery-1.7.1.min.js%22%3E%3C/script%3E')); }</script>
-    <script src="/blog/includes/plugins.min.js?v=1"></script>
-    <script src="/blog/includes/encosia.js?v=12"></script>
-    <script src="http://s1.lqcdn.com/m.min.js?dt=2.3.110104.1"></script>
-    <script src="http://platform.twitter.com/widgets.js"></script>
-    <script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#appId=176723012400928&amp;xfbml=1"></script>
+
+    <script>var jQueryLoadStart = new Date().getTime();</script>
+    <?php if (rand(1, 100) > 50) { ?>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      if (typeof jQuery === 'undefined') {
+        document.write(unescape('%3Cscript%20src%3D%22/blog/includes/jquery-1.9.1.min.js%22%3E%3C/script%3E'));
+        var jQueryType = 'Google CDN Fallback';
+      } else {
+        var jQueryType = 'Google CDN';
+      }
+    </script>
+    <?php } else { ?>
+    <script src="/blog/includes/jquery-1.9.1.min.js"></script>
+    <script>var jQueryType = 'Local';</script>
+    <?php } ?>
+    <script>var jQueryLoadTime = new Date().getTime() - jQueryLoadStart;</script>
+
+    <script src="/blog/includes/plugins.min.js?v=2"></script>
+    <script src="/blog/includes/encosia.js?v=17"></script>
     <script src="https://apis.google.com/js/plusone.js"></script>
-<?php if(!current_user_can("manage_options")) { ?>
+
     <!-- Clicky -->
     <script type="text/javascript">
     function clicky_get_cookie( name ) {
@@ -23,10 +36,24 @@
     <script type="text/javascript">clicky.init(34742);</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
 
+<?php if(!current_user_can("manage_options")) { ?>
     <!-- Google Analytics -->
-    <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
-    <script type="text/javascript">var pageTracker = _gat._getTracker("UA-1170191-1");pageTracker._initData();pageTracker._trackPageview();</script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1170191-1']);
+      _gaq.push(['_trackTiming', 'jQuery', 'Load Time', jQueryLoadTime, jQueryType, 100]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 <?php } ?>
+    <script type="text/javascript" src="http://cdn.buysellads.com/ac/audience.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

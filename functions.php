@@ -46,13 +46,14 @@ function pre_esc_html($comment) {
   );
 }
 
-function get_image_attachment_link($link, $id) {
+function get_image_attachment_link($link) {
   $the_real_id = explode('=', $link);
 
   $post = get_post($the_real_id[1]);
 
   if ($post->post_type == 'attachment') {
     return '/i/' . $post->post_name;
+
   }
 }
 
@@ -65,4 +66,24 @@ function post_type_image() {
 }
 
 add_action('init', 'post_type_image');
+
+add_action( 'wp_print_scripts', 'deregister_cf7_javascript', 100 );
+function deregister_cf7_javascript() {
+    if ( !is_page(12) ) {
+        wp_deregister_script( 'contact-form-7' );
+    }
+}
+
+function encosia_init() {
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+    }
+}
+
+add_action( 'wp_print_styles', 'deregister_cf7_styles', 100 );
+function deregister_cf7_styles() {
+    if ( !is_page(12) ) {
+        wp_deregister_style( 'contact-form-7' );
+    }
+}
 ?>

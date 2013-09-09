@@ -18,8 +18,11 @@
     </div>
     <?php } ?>
 
-    <div id="lqdmad">
-      <div class="lqm_ad" lqm_publisher="lqm.encosia.site" lqm_zone="ron" lqm_format="125x125" lqm_tags="JavaScript%2cWeb%2cHTML%205%2cjQuery%2cWeb"></div>
+    <div id="carbonads-container">
+      <div class="carbonad">
+        <div id="azcarbon"></div>
+        <script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/15480/azcarbon_2_1_0_HORIZDARK"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+      </div>
     </div>
     
     <div id="RSS" class="sidebarBox">
@@ -32,14 +35,6 @@
         <a href="http://feeds.encosia.com/Encosia" rel="nofollow"><img src="http://i.encosia.com/blog/images/rss-icon-trans.png" alt="Subscribe via RSS" width="38" height="38" align="middle" /></a>
         <a href="http://feeds.encosia.com/Encosia" rel="nofollow" class="connectLink">Subscribe to the RSS feed</a><br />
       </div>
-
-<!--      <div id="fb-root" style="display: none;"></div>-->
-<!--      <div class="fb-like item" data-href="https://www.facebook.com/pages/Encosia/6527548387" data-send="false" data-width="324" data-show-faces="false" data-font="trebuchet ms"></div>-->
-    </div>
-
-    <div id="Twitter" class="sidebarBox">
-      <a href="http://twitter.com/Encosia" rel="nofollow" target="_blank"><img src="http://i.encosia.com/blog/images/twitter-icon-trans.png" alt="Follow me on Twitter" width="38" height="38" align="middle" /></a>
-      <a href="http://twitter.com/Encosia" rel="nofollow" target="_blank" class="connectLink">Follow my updates on Twitter</a>
     </div>
 
     <div class="sidebarBox">

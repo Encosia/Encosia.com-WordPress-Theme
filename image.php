@@ -1,11 +1,16 @@
 <?php get_header(); ?>
   <div id="content" class="attachment">
 
-  <?php if (have_posts()) { ?>
+  <?php
+  if (have_posts()) {
+    remove_filter('the_excerpt', 'dd_hook_wp_content');
+    remove_filter('the_content', 'dd_hook_wp_content');
+  ?>
 
       <div class="post" id="post-<?php echo $post->ID; ?>">
-        <h2><a href="http://encosia.com/attachment/<?php echo $post->ID; ?>/" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+        <h2><?php the_title(); ?></h2>
         <div class="post-content">
+
           <div class="entry-attachment">
           <?php
             $att_image = wp_get_attachment_image_src( $post->id, "medium");
@@ -16,26 +21,11 @@
               <img src="<?php echo $att_image[0];?>" width="<?php echo $att_image[1];?>" height="<?php echo $att_image[2];?>" class="attachment-medium" alt="<?php $post->post_excerpt; ?>" />
             </a>
           <?php } else { ?>
-            <a href="<?php echo wp_get_attachment_url($post->ID) ?>" title="<?php echo wp_specialchars( get_the_title($post->ID), 1 ) ?>" rel="attachment"><?php echo basename($post->guid) ?></a>
+            <img src="<?php echo $att_image[0];?>" width="<?php echo $att_image[1];?>" height="<?php echo $att_image[2];?>" class="attachment-medium" alt="<?php $post->post_excerpt; ?>" />
           <?php } ?>
           </div>
           <div class="entry-caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt() ?></div>
         </div>
-
-        <div id="post-share">
-          <span class="st_sharethis_large" displayText="Share"></span>
-          <span class="st_stumbleupon_large" displayText="Stumble"></span>
-          <span class="st_facebook_large" displayText="Facebook"></span>
-          <span class="st_twitter_large" displayText="Tweet"></span>
-          <span class="st_email_large" displayText="Email"></span>
-        </div>
-
-        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-        <script type="text/javascript">
-          stLight.options({
-            publisher:'d3b4c138-8ce7-48cc-8564-c98c0bcb0ff3'
-          });
-        </script>
 
         <div class="previous-image">
           <span class="previous-image-link"><?php previous_image_link('thumbnail', '&laquo; Previous Image'); ?></span>
@@ -47,6 +37,10 @@
           <span class="next-image-link"><?php next_image_link('thumbnail', 'Next Image &raquo;'); ?></span>
 
           <?php next_image_link(); ?>
+        </div>
+
+        <div id="post-commentblock">
+  		  <?php comments_template(); ?>
         </div>
 
       <?php } else { ?>
