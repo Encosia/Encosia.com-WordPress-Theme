@@ -273,7 +273,6 @@ code {
 
 .page-content h3 {
   border-bottom: 1px solid #CCC;
-  padding-bottom: 3px;
 }
 
 .page-content strong { color: #000; }
@@ -585,9 +584,10 @@ code {
   background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-8 */
-  font-family: "myriad-pro-semi-condensed", sans-serif;
-  font-size: 22px;
+  font-family: "myriad-pro-condensed", sans-serif;
+  font-size: 24px;
   color: #fff;
+  letter-spacing: 1px;
   line-height: 30px;
   margin: 0;
   padding-left: 6px;
@@ -753,6 +753,8 @@ div.carbonad {
 
 #sidebar ul li a, .ul-archives li a:visited { color: #220; }
 #sidebar ul li a:hover { color: #F60; }
+
+#sidebar #tekpub { height: 163px; }
 
 .wp_syntax {
   color: #100;

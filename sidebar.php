@@ -43,7 +43,7 @@
       <?php GoogleAnalyticsPopularPosts_view(false); ?>
     </div>
     
-		<div class="sidebarBox">
-			<a href="http://tekpub.com/productions/jquery?ref=encosia"><img src="/blog/images/mastering-jquery-slide.jpg" width="336" height="163" alt="Mastering jQuery at TekPub" /></a>
-		</div>
+	<div id="tekpub" class="sidebarBox">
+	  <a href="http://tekpub.com/productions/jquery?ref=encosia" target="_blank"><img src="/blog/images/mastering-jquery-slide.jpg" width="336" height="163" alt="Mastering jQuery at TekPub" /></a>
+	</div>
   </div>
