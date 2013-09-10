@@ -32,7 +32,7 @@
     
     <ul id="nav">
       <li><a href="http://encosia.com/about-dave-ward/" title="About">About</a></li>
-      <li><a href="http://encosia.com/downloads/" title="Downloads">Downloads</a></li>
+      <!--<li><a href="http://encosia.com/downloads/" title="Downloads">Downloads</a></li>-->
       <li><a href="http://encosia.com/contact/" title="Contact">Contact</a></li>
     </ul>
   </div>
