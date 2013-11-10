@@ -44,6 +44,10 @@ h3 {
   margin: 10px 0 5px;
 }
 
+.wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading #nav {
+  visibility: hidden;
+}
+
 ol { margin-bottom: 20px; margin-left: 2em; }
 
   ol li {
