@@ -13,13 +13,13 @@
       }
     </script>
     <?php } else { ?>
-    <script src="/blog/includes/jquery-1.9.1.min.js"></script>
+    <script src="http://encosia.com/blog/wp-content/themes/encosia/js/jquery-1.9.1.min.js"></script>
     <script>var jQueryType = 'Local';</script>
     <?php } ?>
     <script>var jQueryLoadTime = new Date().getTime() - jQueryLoadStart;</script>
 
-    <script src="/blog/includes/plugins.min.js?v=2"></script>
-    <script src="/blog/includes/encosia.js?v=17"></script>
+    <script src="http://encosia.com/blog/wp-content/themes/encosia/js/plugins.min.js?v=2"></script>
+    <script src="http://encosia.com/blog/wp-content/themes/encosia/js/encosia.js?v=17"></script>
     <script src="https://apis.google.com/js/plusone.js"></script>
 
     <!-- Clicky -->
