@@ -1,4 +1,18 @@
-<?php get_header(); ?>
+<?php
+  // Set this before displaying the header so I can add a twitter:image meta tag
+  //  so that links to image attachments display nice cards in Twitter timelines.
+  global $twitter_image;
+
+  $twitter_image = wp_get_attachment_image_src( $post->id, "full");
+
+  add_filter('wpseo_twitter_card_type', 'image_attachment_twitter_card_type', 20);
+
+  function image_attachment_twitter_card_type() {
+    return 'photo';
+  }
+
+  get_header();
+?>
   <div id="content" class="attachment">
 
   <?php

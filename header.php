@@ -27,6 +27,13 @@
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="pingback" href="http://encosia.com/blog/xmlrpc.php" />
   <meta property="fb:admins" content="503531327" />
+  <?php
+    global $twitter_image;
+
+    if (isset($twitter_image)) { ?>
+  <meta name="twitter:image" content="<?php echo $twitter_image[0]; ?>">
+  <?php } ?>
+
   <?php wp_head(); ?>
 </head>
 <body>
