@@ -66,15 +66,15 @@
     </div>
 
     <div id="comment-guide">
-        <h3>What do you think?</h3>
+        <h3>Your turn. What do you think?</h3>
 
-        <p>I appreciate all of your comments, but please try to stay on topic.
-          If you have a question unrelated to this post, I recommend posting on the
-          <a href="http://forums.asp.net/" rel="nofollow" target="_blank">ASP.NET forums</a> or
-          <a href="http://stackoverflow.com/" rel="nofollow" target="_blank">Stack Overflow</a> instead.</p>
+        <p>A blog isn't a blog without comments, but do try to stay on topic.
+          If you have a question unrelated to this post, you're better off posting it on
+          <a href="http://stackoverflow.com/" rel="nofollow" target="_blank">Stack Overflow</a> instead of commenting here.
+          Tweet or email me a link to your question there and I'll try to help if I can.</p>
 
-        <p>If you're replying to another comment, use the threading feature by clicking
-          "Reply to this comment" before submitting your own.</p>
+        <p>If you're replying to a previous comment, use the threading feature by clicking the
+          "Reply to this comment" link underneath that comment before submitting your own.</p>
 	  </div>
            
     <div id="post-commentblock">
