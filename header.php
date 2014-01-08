@@ -26,6 +26,7 @@
   <link rel="alternate" type="application/rss+xml" title="Comments" href="http://feeds.encosia.com/EncosiaComments" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="pingback" href="http://encosia.com/blog/xmlrpc.php" />
+  <meta property="fb:admins" content="503531327" />
   <?php wp_head(); ?>
 </head>
 <body>
