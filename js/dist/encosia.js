@@ -1,4 +1,5 @@
-(function($) {
+// Initialize image zooming, but limit that slow selector to links in the post area.
+$('.post').find('a[rel=attachment]').colorbox({ rel: 'nofollow' });;(function($) {
   $.getJSON('http://encosia-latest-tweet.azurewebsites.net?callback=?',
     function(response) {
       // Preferably, look for the first non-reply, non-conferenceSpam tweet.
@@ -15,8 +16,6 @@
     }
   );
 
-  // Initialize image zooming, but limit that slow selector to links in the post area.
-  $('.post').find('a[rel=attachment]').colorbox({ rel: 'nofollow' });
 
   function containsIgnoredHashtags(text) {
     var hashtagsToIgnore = ['#msteched', '#mix', '#mvp'];
