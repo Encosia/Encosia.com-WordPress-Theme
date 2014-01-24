@@ -608,6 +608,7 @@ code {
 }
 
 #s {
+  border: 1px solid #bbb;
   height: 30px;
   width: 246px;
   letter-spacing: 1px;
