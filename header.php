@@ -15,7 +15,7 @@
     })();
   </script>
   <!--[if lt IE 7]>
-  <script defer type="text/javascript" src="http://encosia.com/blog/includes/pngfix.js"></script>
+  <script defer type="text/javascript" src="/blog/includes/pngfix.js"></script>
   <![endif]-->
   <!--[if gte IE 9]>
   <style type="text/css">
@@ -40,14 +40,14 @@
 <div id="page">
   <div id="header">
     <div id="headerimg">
-      <h1><a href="http://encosia.com"><img src="http://i.encosia.com/blog/images/encosia-logo-trans.png" height="100" width="312" alt="Encosia - ASP.NET, AJAX, jQuery, and more" title="Encosia - ASP.NET, AJAX, jQuery, and more" /></a></h1>
+      <h1><a href="http://encosia.com"><img src="/blog/images/encosia-logo-trans.png" height="100" width="312" alt="Encosia - ASP.NET, AJAX, jQuery, and more" title="Encosia - ASP.NET, AJAX, jQuery, and more" /></a></h1>
     </div>
     
     <div id="RSSBlock"></div>
     
     <ul id="nav">
-      <li><a href="http://encosia.com/about-dave-ward/" title="About">About</a></li>
+      <li><a href="/about-dave-ward/" title="About">About</a></li>
       <!--<li><a href="http://encosia.com/downloads/" title="Downloads">Downloads</a></li>-->
-      <li><a href="http://encosia.com/contact/" title="Contact">Contact</a></li>
+      <li><a href="/contact/" title="Contact">Contact</a></li>
     </ul>
   </div>
