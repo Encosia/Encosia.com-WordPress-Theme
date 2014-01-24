@@ -53,7 +53,6 @@
 
     </script>
 <?php } ?>
-    <script type="text/javascript" src="http://cdn.buysellads.com/ac/audience.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
