@@ -20,7 +20,7 @@
 
     <script src="/blog/wp-content/themes/encosia/js/dist/plugins.min.js?v=2"></script>
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.js?v=17"></script>
-    <script src="https://apis.google.com/js/plusone.js"></script>
+    <script src="//apis.google.com/js/plusone.js"></script>
 
     <!-- Clicky -->
     <script type="text/javascript">
