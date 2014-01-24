@@ -18,7 +18,6 @@
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-    <script type="text/javascript" src="/blog/includes/comment-reply.min.js"></script>
 
 <?php /* Count the number of comments and trackbacks (or pings) */
     $ping_count = $comment_count = 0;
