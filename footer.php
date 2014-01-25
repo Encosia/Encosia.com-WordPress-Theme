@@ -18,11 +18,10 @@
     <?php } ?>
     <script>var jQueryLoadTime = new Date().getTime() - jQueryLoadStart;</script>
 
+    <script src="/blog/wp-content/themes/encosia/js/dist/plugins.min.js?v=3"></script>
     <?php if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) { ?>
-    <script src="/blog/wp-content/themes/encosia/js/dist/plugins.js?v=3"></script>
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.js?v=18"></script>
     <?php } else { ?>
-    <script src="/blog/wp-content/themes/encosia/js/dist/plugins.min.js?v=3"></script>
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.min.js?v=18"></script>
     <?php } ?>
 
