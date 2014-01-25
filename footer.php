@@ -28,6 +28,8 @@
     <script src="//apis.google.com/js/plusone.js"></script>
 
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
+
+    <!-- Testing webhook deploy. -->
 <?php wp_footer(); ?>
 </body>
 </html>
