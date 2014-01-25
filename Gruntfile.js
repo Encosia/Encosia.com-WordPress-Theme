@@ -24,17 +24,27 @@ module.exports = function(grunt) {
         }
       }
     },
+    less: {
+      development: {
+        options: {
+          paths: ['css']
+        },
+        files: {
+          'css/dist/styles.css': 'css/src/*.less'
+        }
+      }
+    },
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint', 'concat']
     }
   });
 
-
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less']);
 };
