@@ -30,7 +30,7 @@
 
 // Google Analytics
 (function() {
-  window._gaq = _gaq || [];
+  window._gaq = window._gaq || [];
   window._gaq.push(['_setAccount', 'UA-1170191-1']);
   window._gaq.push(['_trackTiming', 'jQuery', 'Load Time', jQueryLoadTime, jQueryType, 100]);
   window._gaq.push(['_trackPageview']);
