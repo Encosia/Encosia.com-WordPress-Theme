@@ -18,8 +18,8 @@
     <?php } ?>
     <script>var jQueryLoadTime = new Date().getTime() - jQueryLoadStart;</script>
 
-    <script src="/blog/wp-content/themes/encosia/js/dist/plugins.min.js?v=2"></script>
-    <script src="/blog/wp-content/themes/encosia/js/dist/encosia.js?v=17"></script>
+    <script src="/blog/wp-content/themes/encosia/js/dist/plugins.min.js?v=3"></script>
+    <script src="/blog/wp-content/themes/encosia/js/dist/encosia.min.js?v=18"></script>
     <script src="//apis.google.com/js/plusone.js"></script>
 
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>

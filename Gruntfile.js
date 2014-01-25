@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'js/dist/encosia.min.js': ['js/src/encosia.js'],
+          'js/dist/encosia.min.js': ['js/dist/encosia.js'],
           'js/dist/plugins.min.js': ['js/src/vendor/plugins.js']
         }
       }
@@ -31,6 +31,15 @@ module.exports = function(grunt) {
         },
         files: {
           'css/dist/styles.css': 'css/src/*.less'
+        }
+      },
+      production: {
+        options: {
+          paths: ['css'],
+          cleancss: true
+        },
+        files: {
+          'css/dist/styles.min.css': 'css/src/*.less'
         }
       }
     },
