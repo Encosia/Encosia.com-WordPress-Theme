@@ -29,12 +29,12 @@ h2 {
   font-size: 25px;
   font-weight: 600;
   padding-bottom: 1px;
-}
 
-  h2 a, h2 a:visited, h2 a:hover {
+  a, a:visited, a:hover {
     color: #000;
     text-decoration: none;
   }
+}
 
 h3 {
   font-family: "myriad-pro-condensed", sans-serif;
@@ -48,12 +48,12 @@ h3 {
   visibility: hidden;
 }
 
-ol { margin-bottom: 20px; margin-left: 2em; }
-
-  ol li {
+ol { margin-bottom: 20px; margin-left: 2em;
+  li {
     list-style-type: decimal;
     list-style-position: outside;
   }
+}
 
 form { margin: 0; padding: 0; }
 
@@ -70,14 +70,17 @@ code {
   margin: 0 15px 10px 0;
   padding-left: 10px;
   font-style: italic;
-}
 
-  #content blockquote p {
+  p {
     padding-bottom: 0;
     margin-bottom: 10px;
   }
 
-  #content blockquote strong { font-style: italic; font-weight: bold; }
+  strong {
+    font-style: italic;
+    font-weight: bold;
+  }
+}
 
 #page {
   margin: 0 auto;
@@ -107,14 +110,13 @@ code {
     position: absolute;
     right: 0;
     bottom: 0;
-  }
 
-    #nav li {
+    li {
       float: left;
       margin-left: 10px;
     }
 
-    #nav a {
+    a {
       color: #fff;
       border-bottom: 1px solid #fff;
       display: block;
@@ -128,13 +130,14 @@ code {
       text-decoration: none;
     }
 
-    #nav a:visited { color: #fff; }
+    a:visited { color: #fff; }
 
-    #nav a:hover {
+    a:hover {
       border-bottom: 2px solid #fff;
       color: #FFF9D8;
       margin-bottom: 5px;
     }
+  }
 
 #content {
   background: #FFF;
