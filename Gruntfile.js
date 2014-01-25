@@ -35,8 +35,8 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint', 'concat']
+      files: ['<%= jshint.files %>', 'css/src/*.less'],
+      tasks: ['jshint', 'concat', 'less']
     }
   });
 
