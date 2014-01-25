@@ -22,14 +22,14 @@
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.js?v=17"></script>
     <script src="//apis.google.com/js/plusone.js"></script>
 
+<?php if(!current_user_can("manage_options")) { ?>
+    <!-- Clicky -->
     <script src="http://static.getclicky.com/js" type="text/javascript"></script>
     <script type="text/javascript">clicky.init(34742);</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
 
-<?php if(!current_user_can("manage_options")) { ?>
     <!-- Google Analytics -->
     <script type="text/javascript">
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-1170191-1']);
       _gaq.push(['_trackTiming', 'jQuery', 'Load Time', jQueryLoadTime, jQueryType, 100]);
@@ -40,7 +40,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
 <?php } ?>
 <?php wp_footer(); ?>
