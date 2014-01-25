@@ -22,16 +22,6 @@
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.js?v=17"></script>
     <script src="//apis.google.com/js/plusone.js"></script>
 
-    <!-- Clicky -->
-    <script type="text/javascript">
-    function clicky_get_cookie( name ) {
-      var ca = document.cookie.split(';');
-      for( var i in ca ) { if( ca[i].indexOf( name+'=' ) > -1 ) return decodeURIComponent( ca[i].split('=')[1] ); }
-      return '';
-    }
-    var clicky_custom_session = { username: clicky_get_cookie('comment_author_f0a237db1cb71445787d907e54df6077'), email: clicky_get_cookie('comment_author_email_f0a237db1cb71445787d907e54df6077') };
-    </script>
-
     <script src="http://static.getclicky.com/js" type="text/javascript"></script>
     <script type="text/javascript">clicky.init(34742);</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
