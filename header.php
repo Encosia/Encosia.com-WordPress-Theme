@@ -15,7 +15,7 @@
     })();
   </script>
   <!--[if lt IE 7]>
-  <script defer type="text/javascript" src="/blog/includes/pngfix.js"></script>
+  <script defer type="text/javascript" src="/blog/wp-content/themes/encosia/js/dist/pngfix.js"></script>
   <![endif]-->
   <!--[if gte IE 9]>
   <style type="text/css">
