@@ -73,7 +73,6 @@ $('#searchform').on('submit', function(evt) {
     }
   );
 
-
   function containsIgnoredHashtags(text) {
     var hashtagsToIgnore = ['#msteched', '#mix', '#mvp'];
 

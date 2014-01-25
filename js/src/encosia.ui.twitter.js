@@ -15,7 +15,6 @@
     }
   );
 
-
   function containsIgnoredHashtags(text) {
     var hashtagsToIgnore = ['#msteched', '#mix', '#mvp'];
 
