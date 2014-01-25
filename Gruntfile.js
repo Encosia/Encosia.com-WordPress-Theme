@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       }
     },
     less: {
-      development: {
+      dev: {
         options: {
           paths: ['css']
         },
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
           'css/dist/styles.css': 'css/src/*.less'
         }
       },
-      production: {
+      prod: {
         options: {
           paths: ['css'],
           cleancss: true
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
     },
     watch: {
       files: ['<%= jshint.files %>', 'css/src/*.less'],
-      tasks: ['jshint', 'concat', 'less']
+      tasks: ['jshint', 'concat', 'less:dev']
     }
   });
 
