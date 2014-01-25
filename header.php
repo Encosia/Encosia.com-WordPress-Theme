@@ -4,7 +4,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <title><?php wp_title(); ?></title>
+  <?php if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) { ?>
+  <link rel="stylesheet" href="/blog/wp-content/themes/encosia/css/dist/styles.css?v=70" type="text/css" media="screen" />
+  <?php } else { ?>
   <link rel="stylesheet" href="/blog/wp-content/themes/encosia/css/dist/styles.min.css?v=70" type="text/css" media="screen" />
+  <?php } ?>
   <script type="text/javascript">
     (function() {
       var config = {
