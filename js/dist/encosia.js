@@ -39,7 +39,16 @@
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-;// Initialize image zooming, but limit that slow selector to links in the post area.
+;(function() {
+  var z = document.createElement("script");
+
+  z.type = "text/javascript";
+  z.async = true;
+  z.src = "http://engine.carbonads.com/z/15480/azcarbon_2_1_0_HORIZDARK";
+
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(z, s);
+})();;// Initialize image zooming, but limit that slow selector to links in the post area.
 $('.post').find('a[rel=attachment]').colorbox({ rel: 'nofollow' });
 
 // Uno clicko, por favor.
