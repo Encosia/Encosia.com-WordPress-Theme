@@ -30,7 +30,7 @@ module.exports = function(grunt) {
           paths: ['css']
         },
         files: {
-          'css/dist/styles.css': 'css/src/*.less'
+          'css/dist/styles.css': 'css/src/styles.less'
         }
       },
       prod: {
