@@ -18,7 +18,7 @@ $(window).on('load', function() {
     var getAlert = $.get('/blog/wp-content/themes/encosia/carbon-alert.html');
 
     $.when(getAlert).done(function(alert) {
-      $('.post-content').prepend(alert);
+      $('.post-content:first').prepend(alert);
     });
   }
 });
