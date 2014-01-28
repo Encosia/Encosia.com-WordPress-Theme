@@ -39,7 +39,8 @@
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-;(function() {
+;// Carbon Ads
+(function() {
   var z = document.createElement("script");
 
   z.type = "text/javascript";
@@ -48,7 +49,20 @@
 
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(z, s);
-})();;// Initialize image zooming, but limit that slow selector to links in the post area.
+})();
+
+// Even developers need to eat...
+$(window).on('load', function() {
+  var adLoaded = $('#azcarbon').html() !== '';
+
+  if (!adLoaded) {
+    var getAlert = $.get('/blog/wp-content/themes/encosia/carbon-alert.html');
+
+    $.when(getAlert).done(function(alert) {
+      $('.post-content').prepend(alert);
+    });
+  }
+});;// Initialize image zooming, but limit that slow selector to links in the post area.
 $('.post').find('a[rel=attachment]').colorbox({ rel: 'nofollow' });
 
 // Uno clicko, por favor.

@@ -1,3 +1,4 @@
+// Carbon Ads
 (function() {
   var z = document.createElement("script");
 
@@ -8,3 +9,16 @@
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(z, s);
 })();
+
+// Even developers need to eat...
+$(window).on('load', function() {
+  var adLoaded = $('#azcarbon').html() !== '';
+
+  if (!adLoaded) {
+    var getAlert = $.get('/blog/wp-content/themes/encosia/carbon-alert.html');
+
+    $.when(getAlert).done(function(alert) {
+      $('.post-content').prepend(alert);
+    });
+  }
+});
