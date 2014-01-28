@@ -20,10 +20,10 @@
 
     <script src="/blog/wp-content/themes/encosia/js/dist/plugins.min.js?v=3"></script>
     <?php if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) { ?>
-    <script src="/blog/wp-content/themes/encosia/js/dist/encosia.js?v=20"></script>
+    <script src="/blog/wp-content/themes/encosia/js/dist/encosia.js?v=21"></script>
     <script src="//localhost:35729/livereload.js"></script>
     <?php } else { ?>
-    <script src="/blog/wp-content/themes/encosia/js/dist/encosia.min.js?v=20"></script>
+    <script src="/blog/wp-content/themes/encosia/js/dist/encosia.min.js?v=21"></script>
     <?php } ?>
 
     <script src="//apis.google.com/js/plusone.js"></script>
