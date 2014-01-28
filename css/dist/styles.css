@@ -393,6 +393,9 @@ code {
   position: relative;
   width: 506px;
 }
+.aside.alert {
+  background-color: #FFF9D8;
+}
 .aside strong {
   font-size: 14px;
 }
