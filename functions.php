@@ -11,27 +11,28 @@ remove_action('wp_head', 'rel_canonical');
 // Custom callback to list comments in the your-theme style
 function custom_comments($comment, $args, $depth) {
   $GLOBALS['comment'] = $comment;
-        $GLOBALS['comment_depth'] = $depth;
-  ?>
-        <div id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
-            <div class="comment-header">
-                <div class="comment-author vcard"><strong><?php comment_author_link() ?></strong><?php if(comment_subscription_status()) { ?> <img src="/blog/images/comment-subscription.png" width="21" height="8" alt="Subscribed to followup comments" /><?php } ?></div>
-                <div class="comment-date"><?php comment_time() ?> - <?php comment_date() ?></div>
-            </div>
+  $GLOBALS['comment_depth'] = $depth;
 
-            <div class="comment-content"><?php comment_text() ?></div>
+  ?><div id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
+      <div class="comment-header">
+        <div class="comment-author vcard"><strong><?php comment_author_link() ?></strong><?php if(comment_subscription_status()) { ?> <img src="/blog/images/comment-subscription.png" width="21" height="8" alt="Subscribed to followup comments" /><?php } ?></div>
+        <div class="comment-date"><?php comment_time() ?> - <?php comment_date() ?></div>
+      </div>
 
-            <a class="comment-reply-link" href="#" rel="nofollow"
-               onclick="return addComment.moveForm('comment-<?php comment_ID() ?>', '<?php comment_ID() ?>', 'respond', '<?php the_ID() ?>')">Reply to this comment</a>
+      <div class="comment-content"><?php comment_text() ?></div>
+        <a class="comment-reply-link" href="#" rel="nofollow">Reply to this comment</a>
 
-            <?php edit_comment_link('(edit)'); ?>            
-<?php }
+        <?php edit_comment_link('(edit)'); ?>
+<?php
+}
+
 // Custom callback to list pings
 function custom_pings($comment, $args, $depth) {
-       $GLOBALS['comment'] = $comment;
-        ?>
-            <li><?php comment_author_link() ?>
-<?php }
+  $GLOBALS['comment'] = $comment;
+
+  ?><li><?php comment_author_link() ?>
+<?php
+}
 
 add_filter('pre_comment_content', 'pre_esc_html');
 
@@ -53,7 +54,6 @@ function get_image_attachment_link($link) {
 
   if ($post->post_type == 'attachment') {
     return '/i/' . $post->post_name;
-
   }
 }
 

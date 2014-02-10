@@ -16,3 +16,12 @@ $('#searchform').on('submit', function(evt) {
   // Show a "not allowed" pointer while submitting the search.
   searchSubmit.style.cursor = 'not-allowed';
 });
+
+$('.comment-reply-link').on('click', function(evt) {
+  evt.preventDefault();
+
+  var commentId = $(this).closest('.comment').attr('id').substring(8),
+      postId = $(this).closest('.post').attr('id').substring(5);
+
+  addComment.moveForm('comment-' + commentId, commentId, 'respond', postId);
+});
