@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     jshint: {
-      files: ['js/src/*.js']
+      files: ['js/src/encosia/**/*.js']
     },
     concat: {
       options: {
@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'js/dist/encosia.js': ['js/src/*.js'],
+          'js/dist/encosia.js': ['js/src/encosia/**/*.js'],
           'js/src/vendor/plugins.js': ['js/src/vendor/plugins/*.js']
         }
       }
