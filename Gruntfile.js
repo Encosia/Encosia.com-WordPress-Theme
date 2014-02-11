@@ -25,21 +25,16 @@ module.exports = function(grunt) {
       }
     },
     less: {
-      dev: {
-        options: {
-          paths: ['css']
-        },
+      dist: {
         files: {
           'css/dist/styles.css': 'css/src/styles.less'
         }
-      },
-      prod: {
-        options: {
-          paths: ['css'],
-          cleancss: true
-        },
+      }
+    },
+    cssmin: {
+      dist: {
         files: {
-          'css/dist/styles.min.css': 'css/src/styles.less'
+          'css/dist/styles.min.css': 'css/dist/styles.css'
         }
       }
     },
@@ -50,7 +45,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['css/src/*.less'],
-        tasks: ['less:dev', 'less:prod']
+        tasks: ['less', 'cssmin']
       },
       livereload: {
         options: { livereload: true },
@@ -64,6 +59,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'cssmin']);
 };
