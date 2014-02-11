@@ -377,140 +377,9 @@ code {
 
 .fb_share_count_wrapper { float: none !important; }
 
-#post-commentblock {
-  float: left;
-  width: 100%;
-}
+@import "comments";
 
-#post-commentblock h3 {
-  border-bottom: 1px solid #ccc;
-}
-
-#trackbacklist li {
-  margin: 0;
-  padding: 2px 0 2px 7px;
-}
-
-#trackbacklist li a { color: #495233; }
-#trackbacklist li a:visited { color: #495233; }
-#trackbacklist a:hover { color: #F60; }
-
-#comment-guide {
-  float: left;
-  width: 395px;
-  margin-top: 10px;
-}
-
-#comment-guide h3 { border-bottom: 1px solid #ccc; }
-
-.post-comments {
-  background: url(/blog/images/mini-comments.gif) no-repeat left center;
-  padding-left: 20px;
-  float: right;
-  font-size: 95%;
-}
-
-#commentlist a { text-decoration: none; }
-#commentform { margin-top: 10px; }
-#commentform p { margin: 0; }
-
-#commentform label { color: #787878; }
-
-#subscriptionMessage { color: #333 !important; }
-
-.comment-header {
-  overflow: hidden;
-  border-bottom: 1px solid #ddd;
-}
-
-.comment-gravatar { float: left; }
-
-.comment-author { float: left; }
-
-.comment-date { float: right; }
-
-.comment-content {
-  clear: both;
-  float: left;
-  margin-top: 10px;
-  width: 100%;
-}
-
-.comment p {
-  clear: both;
-  padding-top: 5px;
-}
-
-.comment {
-  clear: both;
-  position: relative;
-  margin: 10px 0 0 0;
-  border: 1px solid #ddd;
-  overflow: hidden;
-  padding: 4px;
-  background-color: #fff;
-}
-
-.commentlist .odd { background-color: #f8f8f8; }
-
-.comment .comment img { margin: 0; }
-
-.comment-edit-link {
-  margin: 5px;
-  float: right;
-}
-
-.comment-reply-link {
-  margin: 5px;
-  float: right;
-}
-
-.subscribe-to-comments {
-  float: right;
-}
-
-.comment .body .content {
-  padding: 0 3px 0 3px;
-  width: 100%;
-  overflow: auto;
-}
-
-.comment .title abbr { border: none; }
-
-.collapsed .body, .collapsed .comment { display: none; }
-
-/*
-#addcomment small, #addcomment div { padding: 3px; }
-*/
-#author, #email, #url {
-  background-color: #F0F9FF;
-  border: 1px solid #CCC;
-  margin-top: 3px;
-  padding: 3px;
-  width: 50%;
-}
-
-#commentform textarea {
-  width: 98%;
-  background-color: #F0F9FF;
-  border: 1px solid #ccc;
-  padding: 3px;
-  margin-top: 3px;
-}
-
-#addComment, .generalButton {
-  width: 150px;
-  padding: 5px;
-  margin: 5px 0 4px 0;
-  background: url(/blog/images/button-bg.gif) repeat-x;
-  border: 1px solid #adadad !important;
-  border-left-color: #ececec !important;
-  border-top-color: #ececec !important;
-  font: bold 12px Arial, Helvetica, sans-serif;
-  cursor: pointer;
-}
-
-@import "sidebar.less";
+@import "sidebar";
 
 .wp_syntax {
   color: #100;
@@ -586,4 +455,4 @@ code {
 }
 
 // Styles for the Colorbox lightbox plugin.
-@import "colorbox.less";
+@import "colorbox";

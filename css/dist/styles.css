@@ -576,10 +576,6 @@ code {
   margin-top: 10px;
   width: 100%;
 }
-.comment p {
-  clear: both;
-  padding-top: 5px;
-}
 .comment {
   clear: both;
   position: relative;
@@ -588,6 +584,10 @@ code {
   overflow: hidden;
   padding: 4px;
   background-color: #fff;
+}
+.comment p {
+  clear: both;
+  padding-top: 5px;
 }
 .commentlist .odd {
   background-color: #f8f8f8;
