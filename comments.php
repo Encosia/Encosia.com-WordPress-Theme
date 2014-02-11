@@ -57,47 +57,48 @@
 <?php if ( comments_open() ) : ?>
 
 <div id="respond">
+  <h3><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
 
-<h3><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
+  <div class="cancel-comment-reply">
+    <small><?php cancel_comment_reply_link(); ?></small>
+  </div>
 
-<div class="cancel-comment-reply">
-	<small><?php cancel_comment_reply_link(); ?></small>
-</div>
+  <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
+  <p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
+  <?php else : ?>
 
-<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
-<?php else : ?>
+  <form id="commentform" action="/blog/encosia-comments-post.php" method="post">
 
-<form id="commentform" action="/blog/encosia-comments-post.php" method="post">
+  <?php if ( is_user_logged_in() ) : ?>
 
-<?php if ( is_user_logged_in() ) : ?>
+    <p>Logged in as <?php echo $user_identity; ?>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
 
-<p>Logged in as <?php echo $user_identity; ?>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
+  <?php else : ?>
 
-<?php else : ?>
+    <p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" />
+    <label for="author"><small>Name (required)</small></label></p>
 
-<p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" />
-<label for="author"><small>Name (required)</small></label></p>
+    <p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" />
+    <label for="email"><small>Email (required, but never shared or published)</small></label></p>
 
-<p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" />
-<label for="email"><small>Email (required, but never shared or published)</small></label></p>
+    <p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
+    <label for="url"><small>Your Website (optional)</small></label></p>
 
-<p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
-<label for="url"><small>Your Website (optional)</small></label></p>
+    <p>Basic HTML is allowed (e.g. &lt;a&gt;, &lt;blockquote&gt;, &lt;strong&gt;, &lt;em&gt;, etc).</p>
+    <p>To post formatted code blocks, use &lt;pre lang="x"&gt;code&lt;/pre&gt;, where x is asp, csharp, html, javascript, or xml.</p>
 
-<p>Basic HTML is allowed (e.g. &lt;a&gt;, &lt;blockquote&gt;, &lt;strong&gt;, &lt;em&gt;, etc).</p>
-<p>To post formatted code blocks, use &lt;pre lang="x"&gt;code&lt;/pre&gt;, where x is asp, csharp, html, javascript, or xml.</p>
+  <?php endif; ?>
 
-<?php endif; ?>
+    <p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
 
-<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
+    <?php do_action('comment_form', $post->ID); ?>
 
-<?php do_action('comment_form', $post->ID); ?>
-<p><input name="submit" type="submit" id="addComment" tabindex="5" value="Save Comment" />
-  <?php comment_id_fields(); ?>
-</p>
+    <p>
+      <input name="submit" type="submit" id="addComment" tabindex="5" value="Save Comment" />
+      <?php comment_id_fields(); ?>
+    </p>
 
-</form>
+  </form>
 
 <?php endif; // If registration required and not logged in ?>
 </div>
