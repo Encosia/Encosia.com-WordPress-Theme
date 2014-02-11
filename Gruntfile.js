@@ -46,11 +46,11 @@ module.exports = function(grunt) {
     watch: {
       js: {
         files: ['<%= jshint.files %>'],
-        tasks: ['jshint', 'concat']
+        tasks: ['jshint', 'concat', 'uglify']
       },
       css: {
         files: ['css/src/*.less'],
-        tasks: ['less:dev']
+        tasks: ['less:dev', 'less:prod']
       },
       livereload: {
         options: { livereload: true },
