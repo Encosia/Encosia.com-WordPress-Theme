@@ -39,7 +39,7 @@ module.exports = function(grunt) {
           cleancss: true
         },
         files: {
-          'css/dist/styles.min.css': 'css/src/*.less'
+          'css/dist/styles.min.css': 'css/src/styles.less'
         }
       }
     },
