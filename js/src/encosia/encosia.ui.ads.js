@@ -12,7 +12,7 @@
 
 // Even developers need to eat...
 $(window).on('load', function() {
-  setTimeout(function() {
+  var adNag = function() {
     var adLoaded = $('#azcarbon').html() !== '';
 
     if (!adLoaded) {
@@ -22,5 +22,8 @@ $(window).on('load', function() {
         $('#content:not(.attachment) .post-content:first').prepend(alert);
       });
     }
-  }, 5000);
+  };
+
+  // Wait five seconds after window.load and check to make sure the ad is displayed.
+  setTimeout(adNag, 5000);
 });
