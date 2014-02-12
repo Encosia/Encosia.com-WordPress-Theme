@@ -12,13 +12,15 @@
 
 // Even developers need to eat...
 $(window).on('load', function() {
-  var adLoaded = $('#azcarbon').html() !== '';
+  setTimeout(function() {
+    var adLoaded = $('#azcarbon').html() !== '';
 
-  if (!adLoaded) {
-    var getAlert = $.get('/blog/wp-content/themes/encosia/carbon-alert.html');
+    if (!adLoaded) {
+      var getAlert = $.get('/blog/wp-content/themes/encosia/carbon-alert.html');
 
-    $.when(getAlert).done(function(alert) {
-      $('#content:not(.attachment) .post-content:first').prepend(alert);
-    });
-  }
+      $.when(getAlert).done(function(alert) {
+        $('#content:not(.attachment) .post-content:first').prepend(alert);
+      });
+    }
+  }, 5000);
 });
