@@ -6,18 +6,6 @@
       </form>
     </div>
 
-    <?php if(!is_page(17)) { ?>
-    <div id="About" class="sidebarBox">
-      <a href="/about-dave-ward/"><img src="/blog/images/me-sidebar.jpg" alt="Dave Ward" width="150" height="173" align="right" /></a>
-
-      <p><strong>Welcome</strong>! I hope you're in the process of finding something useful here.</p>
-
-      <p>You can keep up with my latest updates by <a href="http://twitter.com/Encosia" target="_blank" rel="nofollow">following me on Twitter</a>
-        and/or subscribing via <a href="http://feeds.encosia.com/Encosia" rel="nofollow">RSS</a> or
-        <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=654672&amp;loc=en_US" rel="nofollow">Email</a>.</p>
-    </div>
-    <?php } ?>
-
     <div id="carbonads-container">
       <div class="carbonad">
         <div id="azcarbon"></div>
