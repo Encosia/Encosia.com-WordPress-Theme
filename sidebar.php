@@ -1,7 +1,7 @@
   <div id="sidebar">
   	<div id="SearchBlock">
       <form method="get" id="searchform" action="http://encosia.com/">
-        <input type="text" class="search" value="" name="s" id="s" />
+        <input type="text" class="search" value="" name="s" id="s" x-webkit-speech="x-webkit-speech" />
         <input type="submit" id="searchsubmit" value="Search" />
       </form>
     </div>
