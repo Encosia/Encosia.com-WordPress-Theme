@@ -24,9 +24,9 @@
       </div>
     </div>
 
-    <div class="sidebarBox">
-      <h3 id="MostPopular">Most Popular Posts</h3>
-
-      <?php GoogleAnalyticsPopularPosts_view(false); ?>
-    </div>
+<!--    <div class="sidebarBox">-->
+<!--      <h3 id="MostPopular">Most Popular Posts</h3>-->
+<!---->
+<!--      --><?php //GoogleAnalyticsPopularPosts_view(false); ?>
+<!--    </div>-->
   </div>
