@@ -11,6 +11,12 @@
         <div id="azcarbon"></div>
       </div>
     </div>
+
+    <div class="sidebarBox" style="display: none;">
+      <h3 id="MostPopular">This month's most popular posts</h3>
+
+
+    </div>
     
     <div id="RSS" class="sidebarBox">
       <div class="item">
@@ -22,11 +28,5 @@
         <a href="http://feeds.encosia.com/Encosia" rel="nofollow"><img src="http://i.encosia.com/blog/images/rss-icon-trans.png" alt="Subscribe via RSS" width="38" height="38" align="middle" /></a>
         <a href="http://feeds.encosia.com/Encosia" rel="nofollow" class="connectLink">Subscribe to the RSS feed</a><br />
       </div>
-    </div>
-
-    <div class="sidebarBox" style="display: none;">
-      <h3 id="MostPopular">Most Popular Posts</h3>
-
-
     </div>
   </div>
