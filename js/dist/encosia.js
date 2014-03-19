@@ -54,8 +54,13 @@
 // Even developers need to eat...
 $(window).on('load', function() {
   var adNag = function() {
+    // If the HTML content of the #azcarbon placeholder div
+    //  is anything but empty, the ad has been loaded.
     var adLoaded = $('#azcarbon').html() !== '';
 
+    // If the ad didn't display, load a small ad nag snippet
+    //  and prepend it to the first visible post (so this works
+    //  on both the home page and individual post pages).
     if (!adLoaded) {
       var getAlert = $.get('/blog/wp-content/themes/encosia/carbon-alert.html');
 
@@ -93,7 +98,36 @@ $('.comment-reply-link').on('click', function(evt) {
       postId = $(this).closest('.post').attr('id').substring(5);
 
   addComment.moveForm('comment-' + commentId, commentId, 'respond', postId);
-});;(function($) {
+});;(function() {
+  $.ajax({
+    url: 'http://encosia-popular-posts-api.azurewebsites.net?callback=?',
+    dataType: 'jsonp',
+    success: function(stats) {
+      stats = stats[0].dates[0].items;
+
+      var $ul = $('<ul>');
+
+      for (var i = 0; i < stats.length; i++) {
+        var $li = $('<li>', {
+          'data-percentage': stats[i].value_percent
+        });
+
+        var $a = $('<a>', {
+          href: stats[i].url,
+          text: stats[i].title.replace(' | Encosia', '')
+        });
+
+        $li.append($a);
+
+        $ul.append($li);
+      }
+
+      $('#MostPopular').after($ul);
+
+      $('#MostPopular').parent().fadeIn(250);
+    }
+  });
+})();;(function($) {
   $.getJSON('http://encosia-latest-tweet.azurewebsites.net?callback=?',
     function(response) {
       // Preferably, look for the first non-reply, non-conferenceSpam tweet.
