@@ -13,7 +13,7 @@
     </div>
 
     <div class="sidebarBox" style="display: none;">
-      <h3 id="MostPopular">This month's most popular posts</h3>
+      <h3 id="MostPopular">Most popular this month</h3>
 
 
     </div>
