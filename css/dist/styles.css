@@ -734,6 +734,20 @@ div.carbonad {
   border-width: 1px !important;
   width: 336px !important;
 }
+#MostPopular {
+  display: none;
+}
+#MostPopular a {
+  position: relative;
+}
+#MostPopular div.popularity-bar {
+  background-color: rgba(189, 223, 255, 0.66);
+  border-right: 1px solid #96CCFF;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
 #RSSBlock {
   position: absolute;
   right: 10px;
@@ -807,17 +821,14 @@ div.carbonad {
 #sidebar ul li {
   margin: 0;
   padding: 2px 0 4px 6px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #777;
 }
 #sidebar ul li a,
 .ul-archives li a:visited {
   color: #220;
 }
 #sidebar ul li a:hover {
-  color: #F60;
-}
-#sidebar #tekpub {
-  height: 163px;
+  color: #1C42BB;
 }
 .wp_syntax {
   color: #100;

@@ -12,8 +12,8 @@
       </div>
     </div>
 
-    <div class="sidebarBox" style="display: none;">
-      <h3 id="MostPopular">Most popular this month</h3>
+    <div id="MostPopular" class="sidebarBox">
+      <h3>Most popular this month</h3>
 
 
     </div>
