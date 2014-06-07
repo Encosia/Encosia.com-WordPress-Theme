@@ -422,11 +422,11 @@ code {
 }
 #post-similarposts ul li {
   margin: 0;
-  padding: 2px 0 4px 7px;
+  padding: 2px 0 4px 0;
   border-top: 1px solid #ccc;
 }
 #post-similarposts ul li a,
-.ul-archives li a:visited {
+#post-similarposts ul li a:visited {
   color: #495233;
 }
 #post-similarposts ul li a:hover {

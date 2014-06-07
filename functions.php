@@ -86,4 +86,12 @@ function deregister_cf7_styles() {
         wp_deregister_style( 'contact-form-7' );
     }
 }
+
+function DequeueYarppStyle()
+{
+	wp_dequeue_style('yarppRelatedCss');
+	wp_deregister_style('yarppRelatedCss');
+}
+
+add_action('wp_footer', 'DequeueYarppStyle');
 ?>
