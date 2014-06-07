@@ -23,9 +23,6 @@
     #sidebar h3 { filter: none; }
   </style>
   <![endif]-->
-  <!--[if lt IE 7]>
-  <script defer type="text/javascript" src="/blog/wp-content/themes/encosia/js/dist/pngfix.js"></script>
-  <![endif]-->
   <link rel="alternate" type="application/rss+xml" title="Posts" href="http://feeds.encosia.com/Encosia" />
   <link rel="alternate" type="application/rss+xml" title="Comments" href="http://feeds.encosia.com/EncosiaComments" />
   <link rel="shortcut icon" href="/favicon.ico" />
