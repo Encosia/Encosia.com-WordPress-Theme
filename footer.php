@@ -25,10 +25,13 @@
     <?php } else { ?>
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.min.js?v=23"></script>
     <?php } ?>
+      
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=gt1329a"></script>
 
     <script src="//apis.google.com/js/plusone.js"></script>
 
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
 <?php wp_footer(); ?>
 </body>
-</html>
+</html>s
