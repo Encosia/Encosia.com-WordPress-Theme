@@ -27,7 +27,7 @@
     <?php } ?>
 
     <script src="http://s7.addthis.com/js/300/addthis_widget.js#async=1"></script>
-    <script>addthis_config.pubid = 'gt1329a';addthis.init();</script>
+    <script>addthis_config = { pubid: 'gt1329a' };addthis.init();</script>
 
     <script src="//apis.google.com/js/plusone.js"></script>
 
