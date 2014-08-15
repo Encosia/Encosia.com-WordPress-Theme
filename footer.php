@@ -25,9 +25,9 @@
     <?php } else { ?>
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.min.js?v=23"></script>
     <?php } ?>
-      
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=gt1329a"></script>
+
+    <script src="http://s7.addthis.com/js/300/addthis_widget.js#async=1"></script>
+    <script>addthis_config.pubid = 'gt1329a';addthis.init();</script>
 
     <script src="//apis.google.com/js/plusone.js"></script>
 
