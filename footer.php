@@ -26,8 +26,11 @@
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.min.js?v=23"></script>
     <?php } ?>
 
-    <script src="http://s7.addthis.com/js/300/addthis_widget.js#async=1"></script>
-    <script>addthis_config = { pubid: 'gt1329a' };addthis.init();</script>
+    <script>
+      var s = document.createElement('script');
+      s.src = '//s7.addthis.com/js/300/addthis_widget.js#pubid=gt1329a';
+      document.getElementsByTagName('head')[0].appendChild(s);
+    </script>
 
     <script src="//apis.google.com/js/plusone.js"></script>
 
