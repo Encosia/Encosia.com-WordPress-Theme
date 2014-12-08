@@ -20,8 +20,8 @@
     
     <div id="RSS" class="sidebarBox">
       <div class="item">
-        <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=654672&amp;loc=en_US" rel="nofollow"><img src="http://i.encosia.com/blog/images/email-icon-trans.png" alt="Subscribe via email" width="38" height="38" align="middle" /></a>
-        <a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=654672&amp;loc=en_US" rel="nofollow" class="connectLink">Get email updates when I post</a><br />
+        <a href="http://encosia.us2.list-manage.com/subscribe?u=4303bd3d6280e45823bf78608&id=64883f8353" rel="nofollow"><img src="http://i.encosia.com/blog/images/email-icon-trans.png" alt="Subscribe via email" width="38" height="38" align="middle" /></a>
+        <a href="http://encosia.us2.list-manage.com/subscribe?u=4303bd3d6280e45823bf78608&id=64883f8353" rel="nofollow" class="connectLink">Get email updates when I post</a><br />
       </div>
 
       <div class="item">
