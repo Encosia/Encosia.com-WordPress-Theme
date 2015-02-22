@@ -36,7 +36,7 @@
       </div>
 
       <div id="post-share">
-        <h3>Share this</h3>
+        <h3>Share</h3>
 
         <?php
           // Changed URL structure from /yyyy/mm/dd/slug to /slug on 5/28/2011.
