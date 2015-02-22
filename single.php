@@ -76,9 +76,6 @@
           If you have a question unrelated to this post, you're better off posting it on
           <a href="http://stackoverflow.com/" rel="nofollow" target="_blank">Stack Overflow</a> instead of commenting here.
           Tweet or email me a link to your question there and I'll try to help if I can.</p>
-
-        <p>If you're replying to a previous comment, use the threading feature by clicking the
-          "Reply to this comment" link underneath that comment before submitting your own.</p>
       </div>
            
       <div id="post-commentblock">
