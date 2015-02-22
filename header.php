@@ -32,7 +32,7 @@
 <div id="page">
   <div id="header">
     <div id="headerimg">
-      <h1><a href="http://encosia.com"><img src="/blog/images/encosia-logo-trans.png" height="100" width="312" alt="Encosia - ASP.NET, AJAX, jQuery, and more" title="Encosia - ASP.NET, AJAX, jQuery, and more" /></a></h1>
+      <h1><a href="http://encosia.com"><img src="/blog/wp-content/themes/encosia/images/encosia-logo-plain.png" height="100" width="312" alt="Encosia - ASP.NET, AJAX, jQuery, and more" title="Encosia - ASP.NET, AJAX, jQuery, and more" /></a></h1>
     </div>
     
     <div id="RSSBlock"></div>
