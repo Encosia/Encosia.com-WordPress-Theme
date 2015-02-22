@@ -75,17 +75,23 @@
 
   <?php else : ?>
 
-    <p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" />
-    <label for="author"><small>Name (required)</small></label></p>
+    <p>
+        <label for="author">Your Name
+            <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" />
+        </label>
+    </p>
 
-    <p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" />
-    <label for="email"><small>Email (required, but never shared or published)</small></label></p>
+    <p>
+        <label for="email">Your Email Address (never shared)
+            <input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" />
+        </label>
+    </p>
 
-    <p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
-    <label for="url"><small>Your Website (optional)</small></label></p>
+    <p>Basic HTML is allowed (e.g. &lt;a&gt;, &lt;blockquote&gt;, &lt;strong&gt;, &lt;em&gt;).</p>
 
-    <p>Basic HTML is allowed (e.g. &lt;a&gt;, &lt;blockquote&gt;, &lt;strong&gt;, &lt;em&gt;, etc).</p>
-    <p>To post formatted code blocks, use &lt;pre lang="x"&gt;code&lt;/pre&gt;, where x is asp, csharp, html, javascript, or xml.</p>
+    <p>Use <code>&lt;pre lang="x"&gt;code&lt;/pre&gt;</code> to include code blocks with syntax highlighting, where x is asp, csharp, html, javascript.
+        Even inside &lt;pre&gt; and &lt;code&gt; blocks, the open angle brackets in HTML and XML need to be encoded (i.e. convert any
+        <code>&lt;</code> to <code>&amp;lt;</code>).</p>
 
   <?php endif; ?>
 
