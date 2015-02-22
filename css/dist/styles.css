@@ -1,108 +1,12 @@
-html {
-  color: #000;
-  background: #FFF;
-}
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-fieldset,
-img {
-  border: 0;
-}
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-strong,
-th,
-var {
-  font-style: normal;
-  font-weight: normal;
-}
-li {
-  list-style: none;
-}
-caption,
-th {
-  text-align: left;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-q:before,
-q:after {
-  content: '';
-}
-abbr,
-acronym {
-  border: 0;
-  font-variant: normal;
-}
-sup {
-  vertical-align: text-top;
-}
-sub {
-  vertical-align: text-bottom;
-}
-input,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-}
-input,
-textarea,
-select {
-  *font-size: 100%;
-}
-legend {
-  color: #000;
-}
+@import "normalize.css";
 body {
-  font: 75% / 150% "Trebuchet MS", serif;
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  line-height: 1.75em;
   color: #333;
   background: #e4eff4 url(/blog/wp-content/themes/encosia/images/main-bg.gif);
   margin: 0;
   padding: 0 0 20px;
-  line-height: 1.7em;
 }
 a {
   color: #C60;
@@ -127,13 +31,19 @@ h1 {
   margin: 0;
   padding: 0;
 }
+h2,
+h3,
+#nav a,
+#content h4,
+#sidebar h3 {
+  font-family: "Archivo Narrow", sans-serif;
+}
 h2 {
-  font-family: "myriad-pro-condensed", sans-serif;
   color: #000;
   margin: 0 0 2px;
   border-bottom: 1px solid #CCCCCC;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 700;
   padding-bottom: 1px;
 }
 h2 a,
@@ -143,17 +53,10 @@ h2 a:hover {
   text-decoration: none;
 }
 h3 {
-  font-family: "myriad-pro-condensed", sans-serif;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
   color: #333;
   margin: 10px 0 5px;
-}
-.wf-loading h2,
-.wf-loading h3,
-.wf-loading h4,
-.wf-loading #nav {
-  visibility: hidden;
 }
 ol {
   margin-bottom: 20px;
@@ -194,7 +97,7 @@ code {
   height: 100%;
   border: 5px solid #d5e6eb;
   border-top: none;
-  background: #fff9d8 url(/blog/images/content-bg.gif) repeat-y;
+  background: #FFF9D8;
 }
 #header {
   background: #111;
@@ -222,12 +125,11 @@ code {
   color: #fff;
   border-bottom: 1px solid #fff;
   display: block;
-  font-family: "myriad-pro-condensed", sans-serif;
   font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
   margin: 0 10px 6px 10px;
-  padding: 0 0 1px 0;
+  padding: 0 0 2px 0;
   text-align: center;
   text-decoration: none;
 }
@@ -246,6 +148,74 @@ code {
   width: 492px;
   overflow: hidden;
 }
+.content {
+  clear: both;
+  padding-top: 10px;
+}
+.content h4 {
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+.content ul {
+  margin: 0 25px 15px 25px;
+  padding: 0;
+}
+.content li {
+  list-style-type: disc;
+  margin: 0 0 5px 0;
+}
+.content a:visited {
+  color: #420;
+}
+.content h3 {
+  border-bottom: 1px solid #CCC;
+}
+.content strong {
+  color: #000;
+}
+.content img.full-width,
+.content img.size-full {
+  border: 1px solid #ccc;
+}
+.content img.alignleft {
+  float: left;
+  margin-right: 10px;
+}
+.content img.alignright {
+  float: right;
+  margin-left: 10px;
+}
+.content .wp-caption img {
+  border: none;
+  padding: 0;
+}
+.content .wp-caption {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  text-align: center;
+  margin-bottom: 10px;
+  width: auto !important;
+}
+.content .wp-caption.alignleft {
+  float: left;
+  margin-right: 10px;
+}
+.content .wp-caption.alignright {
+  float: right;
+  margin-left: 10px;
+}
+.content .wp-caption p {
+  text-align: center;
+  font-style: italic;
+  margin: 0 5px 5px 5px;
+  padding: 0;
+}
 .post {
   clear: both;
   padding-top: 10px;
@@ -254,18 +224,14 @@ code {
   background: url(/blog/images/mini-category.gif) no-repeat left center;
   padding-left: 20px;
   float: left;
-  font-size: 95%;
+  font-size: 12px;
   color: #999999;
 }
 .post-calendar {
   float: right;
+  font-size: 12px;
   color: #333;
   font-style: italic;
-}
-.post-content {
-  clear: both;
-  padding-top: 10px;
-  font-size: 110%;
 }
 .more-link {
   float: right;
@@ -274,102 +240,14 @@ code {
 .post-cat a {
   text-decoration: none;
 }
-.post-content a:visited {
-  color: #420;
-}
-.post-content h3 {
-  border-bottom: 1px solid #CCC;
-  padding-bottom: 3px;
-}
-.post-content img.full-width,
-.post-content img.size-full {
-  border: 1px solid #ccc;
-}
-.post-content img.alignleft {
-  float: left;
-  margin-right: 10px;
-}
-.post-content img.alignright {
-  float: right;
-  margin-left: 10px;
-}
-.post-content .wp-caption img {
-  border: none;
-  padding: 0;
-}
-.post-content .wp-caption {
-  border: 1px solid #ccc;
-  background-color: #eee;
-  text-align: center;
-  margin-bottom: 10px;
-  width: auto !important;
-}
-.post-content .wp-caption.alignleft {
-  float: left;
-  margin-right: 10px;
-}
-.post-content .wp-caption.alignright {
-  float: right;
-  margin-left: 10px;
-}
-.post-content .wp-caption p {
-  text-align: center;
-  font-style: italic;
-  margin: 0 5px 5px 5px;
-  padding: 0;
-}
-.post-content h4,
-.page-content h4 {
-  border-bottom: 1px solid #ddd;
-  color: #333;
-  font-family: "myriad-pro-condensed", sans-serif;
-  font-size: 20px;
-  font-style: italic;
-  letter-spacing: 1px;
-  line-height: 18px;
-  margin-bottom: 4px;
-}
-.page-content ul,
-.post-content ul {
-  margin: 0 25px 15px 25px;
-  padding: 0;
-}
-.page-content li,
-.post-content li {
-  list-style-type: disc;
-  margin: 0 0 5px 0;
-}
-.post-content strong {
-  color: #000;
-}
-.page-heading {
-  float: left;
-  width: 100%;
-  border-bottom: 1px dotted #CCC;
-  padding-bottom: 3px;
-  margin: 0 0 2px;
-}
-.page-heading #title {
-  float: left;
-}
-.page-heading #title h2 {
-  border-bottom: none;
-  padding: 0;
-  margin: 0;
-}
-.page-heading #byline {
-  float: right;
-  line-height: 200%;
-}
 .page-content {
   clear: both;
   padding-top: 0;
-  font-size: 110%;
 }
-.page-content h3 {
+.page-content .page-content h3 {
   border-bottom: 1px solid #CCC;
 }
-.page-content strong {
+.page-content .page-content strong {
   color: #000;
 }
 /* Contact form styling */
@@ -421,9 +299,10 @@ code {
   border-bottom: 1px solid #ccc;
 }
 #post-similarposts ul li {
+  border-top: 1px solid #ccc;
+  font-size: 13px;
   margin: 0;
   padding: 2px 0 4px 0;
-  border-top: 1px solid #ccc;
 }
 #post-similarposts ul li a,
 #post-similarposts ul li a:visited {
@@ -436,6 +315,20 @@ code {
   float: right;
   width: 85px;
   text-align: center;
+}
+#post-share h3 {
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+#post-share p {
+  border-top: 1px solid #ccc;
+}
+#post-share #post-share-twitter {
+  margin-bottom: 10px;
+}
+#post-share #post-share-facebook {
+  width: 60px;
+  margin: 0 auto;
 }
 .attachment .entry-attachment {
   text-align: center;
@@ -491,20 +384,6 @@ code {
   float: right;
   margin-bottom: 5px;
 }
-#post-share h3 {
-  border-bottom: 1px solid #ccc;
-  margin: 10px 0;
-}
-#post-share p {
-  border-top: 1px solid #ccc;
-}
-#post-share-twitter {
-  margin-bottom: 10px;
-}
-#post-share-facebook {
-  width: 60px;
-  margin: 0 auto;
-}
 .fb_share_count_wrapper {
   float: none !important;
 }
@@ -515,17 +394,22 @@ code {
 #post-commentblock h3 {
   border-bottom: 1px solid #ccc;
 }
-#trackbacklist li {
+#post-commentblock ol {
+  font-size: 13px;
+  margin: 0 0 0 34px;
+  padding: 0;
+}
+#post-commentblock ol li {
   margin: 0;
   padding: 2px 0 2px 7px;
 }
-#trackbacklist li a {
+#post-commentblock ol li a {
   color: #495233;
 }
-#trackbacklist li a:visited {
+#post-commentblock ol li a:visited {
   color: #495233;
 }
-#trackbacklist a:hover {
+#post-commentblock ol li a:hover {
   color: #F60;
 }
 #comment-guide {
@@ -618,24 +502,17 @@ code {
 .collapsed .comment {
   display: none;
 }
-/*
-#addcomment small, #addcomment div { padding: 3px; }
-*/
 #author,
 #email,
-#url {
+#url,
+#commentform textarea {
   background-color: #F0F9FF;
   border: 1px solid #CCC;
+  font-family: inherit;
+  font-size: 14px;
   margin-top: 3px;
-  padding: 3px;
-  width: 50%;
-}
-#commentform textarea {
-  width: 98%;
-  background-color: #F0F9FF;
-  border: 1px solid #ccc;
-  padding: 3px;
-  margin-top: 3px;
+  padding: 5px;
+  width: 480px;
 }
 #addComment,
 .generalButton {
@@ -653,9 +530,9 @@ code {
 #sidebar {
   background: #FFF9D8;
   float: right;
+  font-family: "Archivo Narrow", sans-serif;
   padding: 0 10px 20px 10px;
   width: 336px;
-  height: 100%;
 }
 #sidebar h3 {
   background: #000;
@@ -676,15 +553,36 @@ code {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0);
   /* IE6-8 */
-  font-family: "myriad-pro-condensed", sans-serif;
   font-size: 22px;
   color: #fff;
-  letter-spacing: 1px;
-  line-height: 30px;
+  line-height: 28px;
   margin: 0;
   padding-left: 6px;
   height: 30px;
   width: 330px;
+}
+#sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #bbb;
+  border-top: none;
+}
+#sidebar ul li:first-child {
+  border-top: 0;
+}
+#sidebar ul li {
+  font-size: 14px;
+  margin: 0;
+  padding: 2px 0 4px 6px;
+  border-top: 1px solid #777;
+}
+#sidebar ul li a,
+#sidebar .ul-archives li a:visited {
+  color: #220;
+}
+#sidebar ul li a:hover {
+  color: #1C42BB;
 }
 #SearchBlock {
   margin-top: 10px;
@@ -757,27 +655,20 @@ div.carbonad {
   margin-left: 10px;
   border: none;
 }
-#RSS,
-#Twitter {
+#RSS {
   border: 1px solid #bbb;
   float: left;
-}
-#Twitter {
-  padding: 5px;
-  width: 324px;
 }
 #RSS {
   width: 334px;
   margin-bottom: 15px;
 }
-#RSS div,
-#Twitter div {
+#RSS div {
   position: relative;
   padding: 5px;
 }
-#RSS .connectLink,
-#Twitter .connectLink {
-  font-size: 140%;
+#RSS .connectLink {
+  font-size: 20px;
   color: #333;
   margin-left: 10px;
   position: relative;
@@ -807,28 +698,6 @@ div.carbonad {
 }
 #SimilarPosts {
   background-position: 0 -40px;
-}
-#sidebar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #bbb;
-  border-top: none;
-}
-#sidebar ul li:first-child {
-  border-top: 0;
-}
-#sidebar ul li {
-  margin: 0;
-  padding: 2px 0 4px 6px;
-  border-top: 1px solid #777;
-}
-#sidebar ul li a,
-.ul-archives li a:visited {
-  color: #220;
-}
-#sidebar ul li a:hover {
-  color: #1C42BB;
 }
 .wp_syntax {
   color: #100;
