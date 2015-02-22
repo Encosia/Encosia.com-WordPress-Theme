@@ -64,7 +64,7 @@
           <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Encosia" data-url="<?php echo $sharing_url; ?>">Tweet</a>
         </div>
 
-        <iframe src="http://www.facebook.com/plugins/like.php?app_id=121134371309217&amp;href=<?php echo $sharing_url ?>&amp;=false&amp;layout=box_count&amp;width=48&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=trebuchet+ms&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:48px; height:70px;" allowTransparency="true"></iframe>
+        <iframe src="//www.facebook.com/plugins/like.php?app_id=121134371309217&amp;href=<?php echo $sharing_url ?>&amp;=false&amp;layout=box_count&amp;width=48&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=trebuchet+ms&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:48px; height:70px;" allowTransparency="true"></iframe>
 
         <div class="g-plusone" data-size="tall" data-count="true"></div>
       </div>
