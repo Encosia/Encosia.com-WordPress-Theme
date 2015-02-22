@@ -1,10 +1,10 @@
 #post-commentblock {
   float: left;
   width: 100%;
-}
 
-#post-commentblock h3 {
-  border-bottom: 1px solid #ccc;
+  h3 {
+    border-bottom: 1px solid #ccc;
+  }
 }
 
 #trackbacklist li {
@@ -20,9 +20,9 @@
   float: left;
   width: 395px;
   margin-top: 10px;
-}
 
-#comment-guide h3 { border-bottom: 1px solid #ccc; }
+  h3 { border-bottom: 1px solid #ccc; }
+}
 
 .post-comments {
   background: url(/blog/images/mini-comments.gif) no-repeat left center;
@@ -32,6 +32,7 @@
 }
 
 #commentlist a { text-decoration: none; }
+
 #commentform { margin-top: 10px; }
 #commentform p { margin: 0; }
 
@@ -100,23 +101,14 @@
 
 .collapsed .body, .collapsed .comment { display: none; }
 
-/*
-#addcomment small, #addcomment div { padding: 3px; }
-*/
-#author, #email, #url {
+#author, #email, #url, #commentform textarea {
   background-color: #F0F9FF;
   border: 1px solid #CCC;
+  font-family: inherit;
+  font-size: 14px;
   margin-top: 3px;
-  padding: 3px;
-  width: 50%;
-}
-
-#commentform textarea {
-  width: 98%;
-  background-color: #F0F9FF;
-  border: 1px solid #ccc;
-  padding: 3px;
-  margin-top: 3px;
+  padding: 5px;
+  width: 480px
 }
 
 #addComment, .generalButton {
