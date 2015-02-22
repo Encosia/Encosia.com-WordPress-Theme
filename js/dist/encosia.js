@@ -45,7 +45,7 @@
 
   z.type = "text/javascript";
   z.async = true;
-  z.src = "http://engine.carbonads.com/z/15480/azcarbon_2_1_0_HORIZDARK";
+  z.src = "//engine.carbonads.com/z/15480/azcarbon_2_1_0_HORIZDARK";
 
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(z, s);
@@ -100,7 +100,7 @@ $('.comment-reply-link').on('click', function(evt) {
   addComment.moveForm('comment-' + commentId, commentId, 'respond', postId);
 });;(function() {
   $.ajax({
-    url: 'http://encosia-popular-posts-api.azurewebsites.net?callback=?',
+    url: '//encosia-popular-posts-api.azurewebsites.net?callback=?',
     dataType: 'jsonp',
     success: function(stats) {
       stats = stats[0].dates[0].items;
