@@ -15,7 +15,7 @@
     <?php } else { ?>
       Updated <?php the_modified_date() ?>
     <?php } ?></span>
-		<div class="post-content">
+		<div class="post-content content">
 			<?php the_content('Click here to read the rest of this post &raquo;'); ?>
 		</div>
 	  </div>

@@ -14,7 +14,7 @@
       Updated <?php the_modified_date() ?>
       <?php } ?></span>
 
-      <div class="post-content">
+      <div class="post-content content">
         <?php if (get_post_meta(get_the_ID(), 'jQueryForASPNET', true) == 'true') { ?>
         <div class="aside">
           <p>Note: This post is part of a long-running series of posts covering the union of jQuery and ASP.NET:

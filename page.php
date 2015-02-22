@@ -4,7 +4,7 @@
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
     <div class="post" id="post-<?php the_ID(); ?>">
-        <div class="page-content">
+        <div class="page-content content">
         	<?php if ( is_child('downloads') && !is_page('downloads') ) { ?>
           <h2><?php the_title(); ?></h2>
 		    	<?php } ?>
