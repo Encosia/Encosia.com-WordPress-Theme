@@ -94,4 +94,8 @@ function DequeueYarppStyle()
 }
 
 add_action('wp_footer', 'DequeueYarppStyle');
+
+if (!function_exists('gzopen')) {
+function gzopen($filename , $mode, $use_include_path = 0 ) { return gzopen64($filename, $mode, $use_include_path); }
+}
 ?>
