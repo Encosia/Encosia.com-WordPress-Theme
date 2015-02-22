@@ -157,7 +157,7 @@ $('.comment-reply-link').on('click', function(evt) {
     });
   });
 })();;(function($) {
-  $.getJSON('http://encosia-latest-tweet.azurewebsites.net?callback=?',
+  $.getJSON('//encosia-latest-tweet.azurewebsites.net?callback=?',
     function(response) {
       // Preferably, look for the first non-reply, non-conferenceSpam tweet.
       for(var i = 0; i < response.length; i++) {
