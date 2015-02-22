@@ -18,7 +18,7 @@
         <?php if (get_post_meta(get_the_ID(), 'jQueryForASPNET', true) == 'true') { ?>
         <div class="aside">
           <p>Note: This post is part of a long-running series of posts covering the union of jQuery and ASP.NET:
-            <a href="http://encosia.com/jquery-for-the-asp-net-developer/">jQuery for the ASP.NET Developer</a>.</p>
+            <a href="/jquery-for-the-asp-net-developer/">jQuery for the ASP.NET Developer</a>.</p>
                 
             <p>Topics in this series range all the way from using jQuery to enhance UpdatePanels to using jQuery up to
               completely manage rendering and interaction in the browser with ASP.NET only acting as a backend API. If the
