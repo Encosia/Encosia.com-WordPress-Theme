@@ -24,10 +24,15 @@
 
 #comment-guide {
   float: left;
-  width: 395px;
   margin-top: 10px;
 
   h3 { border-bottom: 1px solid #ccc; }
+}
+
+@media only screen and (min-width: 768px) {
+  #comment-guide {
+    width: 395px;
+  }
 }
 
 .post-comments {
@@ -52,8 +57,6 @@
   overflow: hidden;
   border-bottom: 1px solid #ddd;
 }
-
-.comment-gravatar { float: left; }
 
 .comment-author { float: left; }
 
@@ -116,7 +119,7 @@
   font-size: 14px;
   margin-top: 3px;
   padding: 5px;
-  width: 480px
+  width: ~"calc(100% - 12px)";
 }
 
 #addComment, .generalButton {
@@ -129,4 +132,8 @@
   border-top-color: #ececec !important;
   font: bold 12px Arial, Helvetica, sans-serif;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  width: 480px
 }
