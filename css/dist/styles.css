@@ -1,8 +1,8 @@
 @import "normalize.css";
 body {
   font-family: "Merriweather", serif;
-  font-size: 14px;
-  line-height: 1.75em;
+  font-size: 15px;
+  line-height: 1.8em;
   color: #333;
   background: #e4eff4 url(/blog/wp-content/themes/encosia/images/main-bg.gif);
   margin: 0;
