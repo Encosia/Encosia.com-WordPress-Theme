@@ -29,6 +29,8 @@ $(window).on('load', function() {
     }
   };
 
-  // Wait five seconds after window.load and check to make sure the ad is displayed.
-  setTimeout(adNag, 5000);
+  if (Modernizr.mq('(min-width: 768px)')) {
+    // Wait five seconds after window.load and check to make sure the ad is displayed.
+    setTimeout(adNag, 5000);
+  }
 });
