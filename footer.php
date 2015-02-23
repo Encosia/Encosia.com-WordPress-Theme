@@ -37,4 +37,4 @@
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
 <?php wp_footer(); ?>
 </body>
-</html>s
+</html>
