@@ -381,10 +381,13 @@ code {
   }
 }
 .attachment .entry-attachment {
+  margin-top: 15px;
   text-align: center;
 }
 .attachment .entry-attachment img {
   border: 1px solid #999;
+  height: auto;
+  max-width: 100%;
 }
 .attachment .entry-caption {
   text-align: center;
