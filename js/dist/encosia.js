@@ -220,7 +220,7 @@ $('.comment-reply-link').on('click', function(evt) {
       html: '<p>' + status.text + '</p>&mdash; ' + status.user.name + ' (@' + status.user.screen_name + ') <a href="https://twitter.com/' + status.user.screen_name + '/status/' + status.id_str + '">Tweet</a>'
     });
 
-    $('#RSS').after($status);
+    $('#social').after($status);
 
     // Load the Twitter widgets script to progressively enhance this and
     //  also the Twitter button below posts.
