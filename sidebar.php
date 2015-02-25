@@ -1,7 +1,7 @@
   <div id="sidebar">
   	<div id="SearchBlock">
       <form method="get" id="searchform" action="/">
-        <input type="text" class="search" value="" name="s" id="s" x-webkit-speech="x-webkit-speech" />
+        <input type="text" class="search" value="" name="s" id="s" />
         <input type="submit" id="searchsubmit" value="Search" />
       </form>
     </div>
@@ -12,21 +12,17 @@
       </div>
     </div>
 
-    <div id="MostPopular" class="sidebarBox">
-      <h3>Most popular this month</h3>
-
-
-    </div>
-    
-    <div id="RSS" class="sidebarBox">
-      <div class="item">
-        <a href="http://encosia.us2.list-manage.com/subscribe?u=4303bd3d6280e45823bf78608&id=64883f8353" rel="nofollow" target="_blank"><img src="/blog/images/email-icon-trans.png" alt="Subscribe via email" width="38" height="38" align="middle" /></a>
-        <a href="http://encosia.us2.list-manage.com/subscribe?u=4303bd3d6280e45823bf78608&id=64883f8353" rel="nofollow" target="_blank" class="connectLink">Get email updates when I post</a><br />
+      <div id="social" class="sidebarBox">
+          <a class="social social-twitter" href="https://twitter.com/encosia" target="_blank"><i></i> Twitter</a>
+          <a class="social social-facebook" href="https://facebook.com/encosia" target="_blank"><i></i>Facebook</a>
+          <a class="social social-github" href="https://github.com/encosia" target="_blank"><i></i> Github</a>
+          <a class="social social-gplus" href="https://plus.google.com/+Encosia" target="_blank"><i></i> Google+</a>
+          <a class="social social-rss" href="http://feeds.encosia.com/Encosia" target="_blank"><i></i> RSS</a>
       </div>
 
-      <div class="item">
-        <a href="http://feeds.encosia.com/Encosia" rel="nofollow"><img src="/blog/images/rss-icon-trans.png" alt="Subscribe via RSS" width="38" height="38" align="middle" /></a>
-        <a href="http://feeds.encosia.com/Encosia" rel="nofollow" class="connectLink">Subscribe to the RSS feed</a><br />
+      <div id="MostPopular" class="sidebarBox">
+        <h3>Most popular this month</h3>
+
+
       </div>
-    </div>
   </div>

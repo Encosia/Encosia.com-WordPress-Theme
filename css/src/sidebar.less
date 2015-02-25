@@ -178,11 +178,74 @@
   .sidebarBox {
     background: #f0f9ff;
     float: left;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 336px;
   }
 
   #SimilarPosts {
     background-position: 0 -40px;
+  }
+
+  #social {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    ul {
+      border: none;
+
+      li { border: none; }
+    }
+
+    a {
+      color: #fff;
+      display: block;
+      font-size: 20px;
+      height: 60px;
+      padding-left: 80px;
+      position: relative;
+      line-height: 60px;
+      vertical-align: middle;
+
+      i {
+        display: inline-block;
+        background-image: url(/blog/wp-content/themes/encosia/images/flat-social-media-icons.png);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .social-twitter {
+      background-color: darken(#29A9E1, 15);
+
+      i { background-position: 0 -1px; }
+    }
+
+    .social-github {
+      background-color: #333;
+
+      i { background-position: 0 -153px; }
+    }
+
+    .social-facebook {
+      background-color: darken(#3B5A9A, 15);
+
+      i { background-position: 0 -77px; }
+    }
+
+    .social-rss {
+      background-color: darken(#fba933, 15);
+
+      i { background-position: 0 -229px; }
+    }
+
+    .social-gplus {
+      background-color: darken(#DF4B38, 15);
+      i { background-position: 0 -303px; }
+    }
   }
 }
