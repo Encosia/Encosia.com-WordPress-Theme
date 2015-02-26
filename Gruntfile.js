@@ -65,5 +65,5 @@ module.exports = function(grunt) {
     }
   });
   
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'cssmin', 'imagemin']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'cssmin', 'newer:imagemin']);
 };
