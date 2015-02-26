@@ -37,6 +37,9 @@ module.exports = function(grunt) {
     },
     cssmin: {
       dist: {
+        options: {
+          sourceMap: true
+        },
         files: {
           'css/dist/styles.min.css': 'css/dist/styles.css'
         }
