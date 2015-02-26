@@ -19,10 +19,4 @@
           <a class="social social-gplus" href="https://plus.google.com/+Encosia" target="_blank"><i></i> Google+</a>
           <a class="social social-rss" href="http://feeds.encosia.com/Encosia" target="_blank"><i></i> RSS</a>
       </div>
-
-      <div id="MostPopular" class="sidebarBox">
-        <h3>Most popular this month</h3>
-
-
-      </div>
   </div>
