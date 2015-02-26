@@ -39,6 +39,18 @@ module.exports = function(grunt) {
         }
       }
     },
+    autoprefixer: {
+      dist: {
+        options: {
+          browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+          map: {
+            inline: false
+          }
+        },
+        src: 'css/dist/styles.css',
+        dest: 'css/dist/styles.css'
+      }
+    },
     imagemin: {
       dynamic: {
         files: [{
@@ -56,7 +68,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['css/src/*.less'],
-        tasks: ['less', 'cssmin']
+        tasks: ['less', 'autoprefixer', 'cssmin']
       },
       livereload: {
         options: { livereload: true },
@@ -65,5 +77,5 @@ module.exports = function(grunt) {
     }
   });
   
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'cssmin', 'newer:imagemin']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'autoprefixer', 'cssmin', 'newer:imagemin']);
 };
