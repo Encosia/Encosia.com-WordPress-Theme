@@ -39,6 +39,16 @@ module.exports = function(grunt) {
         }
       }
     },
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'images/'
+        }]
+      }
+    },
     watch: {
       js: {
         files: ['<%= jshint.files %>'],
@@ -55,5 +65,5 @@ module.exports = function(grunt) {
     }
   });
   
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'cssmin']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'cssmin', 'imagemin']);
 };
