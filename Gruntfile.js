@@ -84,4 +84,5 @@ module.exports = function(grunt) {
   });
   
   grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'autoprefixer', 'cssmin', 'newer:imagemin']);
+  grunt.registerTask('dist', ['concat', 'uglify', 'less', 'autoprefixer', 'cssmin']);
 };
