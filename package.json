@@ -1,6 +1,8 @@
 {
   "name": "Encosia-WordPress-Theme",
+  "description": "The WordPress theme running on Encosia.com",
   "version": "1.0.0",
+  "repository": "https://github.com/Encosia/Encosia.com-WordPress-Theme",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "^2.2.0",
