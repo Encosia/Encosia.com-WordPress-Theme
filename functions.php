@@ -109,6 +109,7 @@ add_action( 'wp_print_styles', 'encosia_deregister_plugin_assets_header' );
 
 function encosia_deregister_plugin_assets_footer() {
   wp_dequeue_style('yarppRelatedCss');
+  wp_dequeue_style('yarppWidgetCss');
 }
 add_action( 'wp_footer', 'encosia_deregister_plugin_assets_footer' );
 ?>
