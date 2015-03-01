@@ -98,16 +98,17 @@ add_action('wp_footer', 'DequeueYarppStyle');
 if (!function_exists('gzopen')) {
 function gzopen($filename , $mode, $use_include_path = 0 ) { return gzopen64($filename, $mode, $use_include_path); }
 }
-        
-add_action('wp_print_styles','lm_dequeue_header_styles');
-function lm_dequeue_header_styles()
-{
-  wp_dequeue_style('yarppWidgetCss');
-}
 
-add_action('get_footer','lm_dequeue_footer_styles');
-function lm_dequeue_footer_styles()
-{
+// Code to remove YARPP's injected CSS.
+// https://wordpress.org/support/topic/prevent-loading-relatedcss-and-widgetcss        
+function encosia_deregister_plugin_assets_header() {
+  wp_dequeue_style('yarppWidgetCss');
+  wp_deregister_style('yarppRelatedCss');
+}
+add_action( 'wp_print_styles', 'encosia_deregister_plugin_assets_header' );
+
+function encosia_deregister_plugin_assets_footer() {
   wp_dequeue_style('yarppRelatedCss');
 }
+add_action( 'wp_footer', 'encosia_deregister_plugin_assets_footer' );
 ?>
