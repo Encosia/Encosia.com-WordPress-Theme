@@ -116,6 +116,6 @@ module.exports = function(grunt) {
     }
   });
   
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'autoprefixer', 'cssmin', 'newer:imagemin']);
+  grunt.registerTask('default', ['jshint', 'less', 'autoprefixer', 'cssmin', 'newer:imagemin']);
   grunt.registerTask('dist', ['copy', 'useminPrepare', 'concat:generated', 'uglify:dist', 'less', 'autoprefixer', 'cssmin', 'usemin']);
 };
