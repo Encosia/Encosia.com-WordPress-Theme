@@ -25,6 +25,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    wiredep: {
+      task: {
+        src: [
+          'footer.php',
+          'header.php'
+        ]
+      }
+    },
     less: {
       dist: {
         options: {

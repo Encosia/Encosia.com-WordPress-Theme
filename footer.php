@@ -19,10 +19,14 @@
     <script>var jQueryLoadTime = new Date().getTime() - jQueryLoadStart;</script>
 
     <script src="/blog/wp-content/themes/encosia/js/dist/plugins.min.js?v=5"></script>
+
     <?php if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) { ?>
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.js?v=24"></script>
     <script src="//localhost:35729/livereload.js"></script>
     <?php } else { ?>
+    <!-- bower:js -->
+    <script src="bower_components/autosize/dest/autosize.js"></script>
+    <!-- endbower -->
     <script src="/blog/wp-content/themes/encosia/js/dist/encosia.min.js?v=23"></script>
     <?php } ?>
 
