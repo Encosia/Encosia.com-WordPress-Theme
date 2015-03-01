@@ -95,12 +95,12 @@
 
   <?php endif; ?>
 
-    <p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
+    <p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="3"></textarea></p>
 
     <?php do_action('comment_form', $post->ID); ?>
 
     <p>
-      <input name="submit" type="submit" id="addComment" tabindex="5" value="Save Comment" />
+      <input name="submit" type="submit" id="add-comment" class="btn" tabindex="4" value="Post Comment" />
       <?php comment_id_fields(); ?>
     </p>
 
