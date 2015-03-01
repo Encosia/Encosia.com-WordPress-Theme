@@ -30,7 +30,15 @@ module.exports = function(grunt) {
         src: [
           'footer.php',
           'header.php'
-        ]
+        ],
+        fileTypes: {
+          html: {
+            replace: {
+              js: '<script src="/blog/wp-content/themes/encosia/{{filePath}}"></script>',
+              css: '<link rel="stylesheet" href="/blog/wp-content/themes/encosia/{{filePath}}" />'
+            }
+          }
+        }
       }
     },
     less: {
@@ -39,17 +47,7 @@ module.exports = function(grunt) {
           sourceMap: true
         },
         files: {
-          'css/dist/styles.css': 'css/src/styles.less'
-        }
-      }
-    },
-    cssmin: {
-      dist: {
-        options: {
-          sourceMap: true
-        },
-        files: {
-          'css/dist/styles.min.css': 'css/dist/styles.css'
+          'css/styles.css': 'less/styles.less'
         }
       }
     },
@@ -61,8 +59,18 @@ module.exports = function(grunt) {
             inline: false
           }
         },
-        src: 'css/dist/styles.css',
-        dest: 'css/dist/styles.css'
+        src: 'css/styles.css',
+        dest: 'css/styles.css'
+      }
+    },
+    cssmin: {
+      dist: {
+        options: {
+          sourceMap: true
+        },
+        files: {
+          'dist/css/styles.min.css': 'css/styles.css'
+        }
       }
     },
     imagemin: {
