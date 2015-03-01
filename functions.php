@@ -87,14 +87,6 @@ function deregister_cf7_styles() {
     }
 }
 
-function DequeueYarppStyle()
-{
-	wp_dequeue_style('yarppRelatedCss');
-	wp_deregister_style('yarppRelatedCss');
-}
-
-add_action('wp_footer', 'DequeueYarppStyle');
-
 if (!function_exists('gzopen')) {
 function gzopen($filename , $mode, $use_include_path = 0 ) { return gzopen64($filename, $mode, $use_include_path); }
 }
