@@ -75,6 +75,13 @@ module.exports = function(grunt) {
         }]
       }
     },
+    copy: {
+      dist: {
+        files: [
+          { expand: true, src: ['*.{php,html}'], dest: 'dist/' }
+        ]
+      }
+    },
     watch: {
       js: {
         files: ['<%= jshint.files %>'],
