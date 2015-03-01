@@ -106,12 +106,12 @@ module.exports = function(grunt) {
         tasks: ['jshint', 'concat', 'uglify']
       },
       css: {
-        files: ['css/src/*.less'],
+        files: ['less/*.less'],
         tasks: ['less', 'autoprefixer', 'cssmin']
       },
       livereload: {
         options: { livereload: true },
-        files: ['css/dist/*.css', 'js/dist/*.js']
+        files: ['css/*.css', 'js/*.js']
       }
     }
   });
