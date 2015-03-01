@@ -42,7 +42,7 @@
       document.getElementsByTagName('head')[0].appendChild(s);
     </script>
 
-    <script src="//apis.google.com/js/plusone.js"></script>
+    <script src="https://apis.google.com/js/plusone.js"></script>
 
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
 <?php wp_footer(); ?>
