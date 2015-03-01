@@ -25,3 +25,7 @@ $('.comment-reply-link').on('click', function(evt) {
 
   addComment.moveForm('comment-' + commentId, commentId, 'respond', postId);
 });
+
+if (document.getElementById('comment')) {
+  autosize(document.getElementById('comment'));
+}
