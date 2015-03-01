@@ -98,4 +98,16 @@ add_action('wp_footer', 'DequeueYarppStyle');
 if (!function_exists('gzopen')) {
 function gzopen($filename , $mode, $use_include_path = 0 ) { return gzopen64($filename, $mode, $use_include_path); }
 }
+        
+add_action('wp_print_styles','lm_dequeue_header_styles');
+function lm_dequeue_header_styles()
+{
+  wp_dequeue_style('yarppWidgetCss');
+}
+
+add_action('get_footer','lm_dequeue_footer_styles');
+function lm_dequeue_footer_styles()
+{
+  wp_dequeue_style('yarppRelatedCss');
+}
 ?>
