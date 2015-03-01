@@ -13,22 +13,28 @@
       }
     </script>
     <?php } else { ?>
-    <script src="/blog/wp-content/themes/encosia/js/dist/jquery-1.9.1.min.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/vendor/jquery-1.9.1.min.js"></script>
     <script>var jQueryType = 'Local';</script>
     <?php } ?>
     <script>var jQueryLoadTime = new Date().getTime() - jQueryLoadStart;</script>
 
-    <script src="/blog/wp-content/themes/encosia/js/dist/plugins.min.js?v=5"></script>
-
-    <?php if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) { ?>
-    <script src="/blog/wp-content/themes/encosia/js/dist/encosia.js?v=24"></script>
-    <script src="//localhost:35729/livereload.js"></script>
-    <?php } else { ?>
+    <!-- build:js /blog/wp-content/themes/encosia/js/vendor.min.js -->
+    <script src="/blog/wp-content/themes/encosia/js/vendor/colorbox-1.4.3.min.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/vendor/comment-reply.min.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/vendor/jquery.easings.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/vendor/modernizr.custom.02494.js"></script>
     <!-- bower:js -->
-    <script src="bower_components/autosize/dest/autosize.js"></script>
+    <script src="/blog/wp-content/themes/encosia/bower_components/autosize/dest/autosize.js"></script>
     <!-- endbower -->
-    <script src="/blog/wp-content/themes/encosia/js/dist/encosia.min.js?v=23"></script>
-    <?php } ?>
+    <!-- endbuild -->
+
+    <!-- build:js /blog/wp-content/themes/encosia/js/encosia.min.js -->
+      <script src="/blog/wp-content/themes/encosia/js/encosia.analytics.js"></script>
+      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.js"></script>
+      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.sidebar.js"></script>
+      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.twitter.js"></script>
+      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.ads.js"></script>
+    <!-- endbuild -->
 
     <script>
       var s = document.createElement('script');

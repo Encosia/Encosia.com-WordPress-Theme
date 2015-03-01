@@ -5,11 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <title><?php wp_title(); ?></title>
-  <?php if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) { ?>
-    <link rel="stylesheet" href="/blog/wp-content/themes/encosia/css/dist/styles.css?v=73" type="text/css" media="screen" />
-  <?php } else { ?>
-    <link rel="stylesheet" href="/blog/wp-content/themes/encosia/css/dist/styles.min.css?v=73" type="text/css" media="screen" />
-  <?php } ?>
+    <!-- build:css /blog/wp-content/themes/encosia/css/styles.min.css -->
+    <!-- bower:css -->
+    <!-- endbower-->
+    <link rel="stylesheet" href="/blog/wp-content/themes/encosia/css/styles.css" type="text/css" media="screen" />
+    <!-- endbuild -->
     <link href="//fonts.googleapis.com/css?family=Merriweather:400italic,400,700|Archivo+Narrow:400,400italic" rel="stylesheet" type="text/css">
     <link rel="alternate" type="application/rss+xml" title="Posts" href="http://feeds.encosia.com/Encosia" />
     <link rel="alternate" type="application/rss+xml" title="Comments" href="http://feeds.encosia.com/EncosiaComments" />

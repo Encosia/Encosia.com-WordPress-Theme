@@ -1,27 +1,17 @@
 module.exports = function(grunt) {
-  require('jit-grunt')(grunt);
+  require('time-grunt')(grunt);
+  require('jit-grunt')(grunt, { useminPrepare: 'grunt-usemin' });
 
   // Project configuration.
   grunt.initConfig({
     jshint: {
       files: ['js/src/encosia/**/*.js']
     },
-    concat: {
-      options: {
-        separator: ';'
-      },
-      dist: {
-        files: {
-          'js/dist/encosia.js': ['js/src/encosia/**/*.js'],
-          'js/src/vendor/plugins.js': ['js/src/vendor/plugins/*.js']
-        }
-      }
-    },
     uglify: {
       dist: {
         files: {
-          'js/dist/encosia.min.js': ['js/dist/encosia.js'],
-          'js/dist/plugins.min.js': ['js/src/vendor/plugins.js']
+          'dist/js/encosia.min.js': ['.tmp/concat/blog/wp-content/themes/encosia/js/encosia.min.js'],
+          'dist/js/vendor.min.js': ['.tmp/concat/blog/wp-content/themes/encosia/js/vendor.min.js']
         }
       }
     },
@@ -86,8 +76,28 @@ module.exports = function(grunt) {
     copy: {
       dist: {
         files: [
-          { expand: true, src: ['*.{php,html}'], dest: 'dist/' }
+          { expand: true, src: ['*.{php,html}'], dest: 'dist/' },
+          { expand: true, src: 'js/vendor/jquery-1.9.1.min.js', dest: 'dist/' },
+          { expand: true, src: 'images/**/*.{png,gif,jpg}', dest: 'dist/' }
         ]
+      }
+    },
+    useminPrepare: {
+      dist: {
+        options: {
+          dest: '../../../../dist/',
+          root: '../../../..'
+        },
+        src: ['header.php', 'footer.php']
+      }
+    },
+    usemin: {
+      dist: {
+        options: {
+          assetsDirs: ['dist'],
+          type: 'html'
+        },
+        files: { src: ['dist/header.php', 'dist/footer.php']}
       }
     },
     watch: {
@@ -107,5 +117,5 @@ module.exports = function(grunt) {
   });
   
   grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'less', 'autoprefixer', 'cssmin', 'newer:imagemin']);
-  grunt.registerTask('dist', ['concat', 'uglify', 'less', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('dist', ['copy', 'useminPrepare', 'concat:generated', 'uglify:dist', 'less', 'autoprefixer', 'cssmin', 'usemin']);
 };
