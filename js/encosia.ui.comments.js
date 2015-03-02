@@ -10,6 +10,4 @@ $('#add-comment').on('click', function(evt) {
   }, 0);
 
   this.style.cursor = 'not-allowed';
-
-  evt.preventDefault();
 });
