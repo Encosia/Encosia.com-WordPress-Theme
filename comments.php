@@ -100,7 +100,18 @@
     <?php do_action('comment_form', $post->ID); ?>
 
     <p>
-      <input name="submit" type="submit" id="add-comment" class="btn" tabindex="4" value="Post Comment" />
+      <button id="add-comment" type="submit" class="btn" tabindex="4">
+        <span>Post Comment</span>
+
+        <div class="spinner">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
+        </div>
+      </button>
+
       <?php comment_id_fields(); ?>
     </p>
 
