@@ -29,3 +29,17 @@ $('.comment-reply-link').on('click', function(evt) {
 if (document.getElementById('comment')) {
   autosize(document.getElementById('comment'));
 }
+
+// AddThis
+(function() {
+  var s = document.createElement('script');
+  s.src = '//s7.addthis.com/js/300/addthis_widget.js#pubid=gt1329a';
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+
+// Google+ button
+(function() {
+  var s = document.createElement('script');
+  s.src = 'https://apis.google.com/js/plusone.js';
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();

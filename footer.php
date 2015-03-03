@@ -31,19 +31,12 @@
     <!-- build:js /blog/wp-content/themes/encosia/js/encosia.min.js -->
       <script src="/blog/wp-content/themes/encosia/js/encosia.analytics.js"></script>
       <script src="/blog/wp-content/themes/encosia/js/encosia.ui.js"></script>
+      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.header.js"></script>
       <script src="/blog/wp-content/themes/encosia/js/encosia.ui.sidebar.js"></script>
       <script src="/blog/wp-content/themes/encosia/js/encosia.ui.twitter.js"></script>
       <script src="/blog/wp-content/themes/encosia/js/encosia.ui.ads.js"></script>
       <script src="/blog/wp-content/themes/encosia/js/encosia.ui.comments.js"></script>
     <!-- endbuild -->
-
-    <script>
-      var s = document.createElement('script');
-      s.src = '//s7.addthis.com/js/300/addthis_widget.js#pubid=gt1329a';
-      document.getElementsByTagName('head')[0].appendChild(s);
-    </script>
-
-    <script src="https://apis.google.com/js/plusone.js"></script>
 
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
 <?php wp_footer(); ?>
