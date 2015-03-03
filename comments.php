@@ -76,15 +76,15 @@
   <?php else : ?>
 
     <p>
-        <label for="author">Your Name
-            <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" />
-        </label>
+      <label for="author">Your Name
+        <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" />
+      </label>
     </p>
 
     <p>
-        <label for="email">Your Email Address (never shared)
-            <input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" />
-        </label>
+      <label for="email">Your Email Address (never shared)
+        <input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" />
+      </label>
     </p>
 
     <p>Basic HTML is allowed (e.g. &lt;a&gt;, &lt;blockquote&gt;, &lt;strong&gt;, &lt;em&gt;).</p>
