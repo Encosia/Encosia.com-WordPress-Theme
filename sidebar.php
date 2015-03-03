@@ -18,5 +18,9 @@
           <a class="social social-github hvr-grow" href="https://github.com/encosia" target="_blank"><i></i> Github</a>
           <a class="social social-gplus hvr-grow" href="https://plus.google.com/+Encosia" target="_blank"><i></i> Google+</a>
           <a class="social social-rss hvr-grow" href="http://feeds.encosia.com/Encosia" target="_blank"><i></i> RSS</a>
+          <a class="social social-email hvr-grow" href="http://encosia.us2.list-manage.com/subscribe?u=4303bd3d6280e45823bf78608&id=64883f8353" target="_blank">
+              <i></i>
+              Receive New Posts by Email
+          </a>
       </div>
   </div>
