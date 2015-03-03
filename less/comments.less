@@ -82,11 +82,19 @@
     clear: both;
     padding-top: 5px;
   }
+
+  .comment img { margin: 0; }
+
+  .body .content {
+    padding: 0 3px 0 3px;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .title abbr { border: none; }
 }
 
 .commentlist .odd { background-color: #f8f8f8; }
-
-.comment .comment img { margin: 0; }
 
 .comment-edit-link {
   margin: 5px;
@@ -101,14 +109,6 @@
 .subscribe-to-comments {
   float: right;
 }
-
-.comment .body .content {
-  padding: 0 3px 0 3px;
-  width: 100%;
-  overflow: auto;
-}
-
-.comment .title abbr { border: none; }
 
 .collapsed .body, .collapsed .comment { display: none; }
 
