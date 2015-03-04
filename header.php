@@ -24,17 +24,17 @@
   <?php wp_head(); ?>
   </head>
 <body>
-<div id="page">
-  <div id="header">
-    <div id="headerimg">
-      <h1><a href="http://encosia.com"><img src="/blog/wp-content/themes/encosia/images/encosia-logo-plain.png" height="100" width="312" alt="Encosia - ASP.NET, AJAX, jQuery, and more" title="Encosia - ASP.NET, AJAX, jQuery, and more" /></a></h1>
-    </div>
-    
-    <div id="RSSBlock"></div>
-    
-    <ul id="nav">
-      <li><a href="/about-dave-ward/" title="About">About</a></li>
-      <!--<li><a href="http://encosia.com/downloads/" title="Downloads">Downloads</a></li>-->
-      <li><a href="/contact/" title="Contact">Contact</a></li>
-    </ul>
-  </div>
+    <div id="page">
+        <div class="header-container">
+            <header>
+                <a href="/">
+                    <img src="/blog/wp-content/themes/encosia/images/encosia-logo-plain.png"
+                         alt="Encosia - ASP.NET, AJAX, jQuery, and more" title="Encosia - ASP.NET, AJAX, jQuery, and more" />
+                </a>
+
+                <nav>
+                    <a href="/about-dave-ward" title="About">About</a>
+                    <a href="/contact" title="Contact">Contact</a>
+                </nav>
+            </header>
+        </div>
