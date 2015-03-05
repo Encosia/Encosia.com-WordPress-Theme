@@ -25,6 +25,8 @@
   </head>
 <body>
     <div id="page">
+        <div class="padding-top"></div>
+
         <div class="header-container">
             <header>
                 <a href="/">

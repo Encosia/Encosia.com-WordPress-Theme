@@ -1,17 +1,28 @@
-if (Modernizr.mq('(min-width: 768px)')) {
-    // Pre-calculate some constants.
-    var MAX_Y = 130,
-        MIN_Y = 60,
-        DY = MAX_Y - MIN_Y,
-        $logo = $('header img'),
-        LOGO_HEIGHT = $logo.height(),
-        $headerContainer = $('.header-container');
+(function() {
+    if (Modernizr.mq('(min-width: 768px)')) {
+        // Pre-calculate some constants.
+        var lastY = window.scrollY,
+            DY = lastY - window.scrollY,
+            $headerContainer = $('.header-container');
 
-    $(window).scroll(function () {
-        var scrollDistance = Math.min(DY, window.scrollY);
+        $(window).scroll(function (evt) {
+            clearTimeout(initTimer);
 
-        $logo.height(LOGO_HEIGHT - scrollDistance);
-        $headerContainer.height(MAX_Y - scrollDistance);
+            handleScroll(evt);
+        });
 
-    });
-}
+        var initTimer = setTimeout(2000, handleScroll);
+
+        var handleScroll = function (evt) {
+            DY = lastY - window.scrollY;
+
+            lastY = window.scrollY;
+
+            if (lastY > 100 && DY < 0) {
+                $headerContainer.addClass('collapsed');
+            } else if (lastY < 1000 && DY > 0) {
+                $headerContainer.removeClass('collapsed');
+            }
+        };
+    }
+})();
