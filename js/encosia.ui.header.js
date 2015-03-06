@@ -1,8 +1,8 @@
 (function() {
     if (Modernizr.mq('(min-width: 768px)')) {
         // Pre-calculate some constants.
-        var lastY = window.scrollY,
-            DY = lastY - window.scrollY,
+        var lastY = $(window).scrollTop(),
+            DY = lastY - $(window).scrollTop(),
             $headerContainer = $('.header-container');
 
         $(window).scroll(function (evt) {
@@ -14,9 +14,9 @@
         var initTimer = setTimeout(2000, handleScroll);
 
         var handleScroll = function (evt) {
-            DY = lastY - window.scrollY;
+            DY = lastY - $(window).scrollTop();
 
-            lastY = window.scrollY;
+            lastY = $(window).scrollTop();
 
             if (lastY > 100 && DY < 0) {
                 $headerContainer.addClass('collapsed');
