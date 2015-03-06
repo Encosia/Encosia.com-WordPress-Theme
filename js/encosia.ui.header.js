@@ -20,7 +20,7 @@
 
             if (lastY > 100 && DY < 0) {
                 $headerContainer.addClass('collapsed');
-            } else if (lastY < 1000 && DY > 0) {
+            } else if (lastY < 250 && DY > 0) {
                 $headerContainer.removeClass('collapsed');
             }
         };
