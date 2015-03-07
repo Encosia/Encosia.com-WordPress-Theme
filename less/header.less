@@ -19,6 +19,7 @@ nav { display: none; }
 
 @media only screen and (min-width: 768px) {
   .header-container {
+    border-bottom: 4px solid rgb(41, 169, 225);
     height: 130px;
     text-align: left;
     transition: height 0.2s;
@@ -80,6 +81,8 @@ nav { display: none; }
   }
 
   .header-container.collapsed {
+    border-bottom-width: 2px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
     height: 60px;
     transition: height 1s ease;
 
