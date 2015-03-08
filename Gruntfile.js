@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     jshint: {
-      files: ['js/src/encosia/**/*.js']
+      files: ['js/encosia.*.js']
     },
     uglify: {
       dist: {
