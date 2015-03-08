@@ -11,9 +11,6 @@
             var handleScroll = function (evt) {
                 DY = lastY - $(window).scrollTop();
 
-                console.log(DY);
-
-
                 if (lastY > 100 && DY <= 0) {
                     $headerContainer.addClass('collapsed');
                 } else if (lastY < 250 && DY >= 0) {
