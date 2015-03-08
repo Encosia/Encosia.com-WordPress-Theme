@@ -107,7 +107,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['less/*.less'],
-        tasks: ['less', 'autoprefixer', 'cssmin']
+        tasks: ['less', 'autoprefixer']
       },
       livereload: {
         options: { livereload: true },
