@@ -5,9 +5,5 @@ $('#add-comment').on('click', function(evt) {
 
   $button.find('.spinner').show();
 
-  setTimeout(function() {
-    $button.attr('disabled', 'disabled');
-  }, 0);
-
   this.style.cursor = 'not-allowed';
 });
