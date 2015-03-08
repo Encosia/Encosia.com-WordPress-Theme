@@ -24,6 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "autosize": "~2.0.0"
+    "autosize": "~2.0.0",
+    "limit": "*"
   }
 }

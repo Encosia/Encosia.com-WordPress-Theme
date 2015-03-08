@@ -25,17 +25,18 @@
     <script src="/blog/wp-content/themes/encosia/js/vendor/modernizr.custom.02494.js"></script>
     <!-- bower:js -->
     <script src="/blog/wp-content/themes/encosia/bower_components/autosize/dest/autosize.js"></script>
+    <script src="/blog/wp-content/themes/encosia/bower_components/limit/limit.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js /blog/wp-content/themes/encosia/js/encosia.min.js -->
-      <script src="/blog/wp-content/themes/encosia/js/encosia.analytics.js"></script>
-      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.js"></script>
-      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.header.js"></script>
-      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.sidebar.js"></script>
-      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.twitter.js"></script>
-      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.ads.js"></script>
-      <script src="/blog/wp-content/themes/encosia/js/encosia.ui.comments.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/encosia.analytics.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.header.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.sidebar.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.twitter.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.ads.js"></script>
+    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.comments.js"></script>
     <!-- endbuild -->
 
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
