@@ -18,26 +18,12 @@
     <?php } ?>
     <script>var jQueryLoadTime = new Date().getTime() - jQueryLoadStart;</script>
 
-    <!-- build:js /blog/wp-content/themes/encosia/js/vendor.min.js -->
-    <script src="/blog/wp-content/themes/encosia/js/vendor/colorbox-1.4.3.min.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/vendor/comment-reply.min.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/vendor/jquery.easings.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/vendor/modernizr.custom.02494.js"></script>
-    <!-- bower:js -->
-    <script src="/blog/wp-content/themes/encosia/bower_components/autosize/dest/autosize.js"></script>
-    <script src="/blog/wp-content/themes/encosia/bower_components/limit/limit.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <script src="/blog/wp-content/themes/encosia/jspm_packages/system.js"></script>
 
-    <!-- build:js /blog/wp-content/themes/encosia/js/encosia.min.js -->
-    <script src="/blog/wp-content/themes/encosia/js/encosia.analytics.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.header.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.sidebar.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.twitter.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.ads.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.comments.js"></script>
-    <!-- endbuild -->
+    <script src="/blog/wp-content/themes/encosia/config.js"></script>
+    <script>
+      System.import('js/encosia');
+    </script>
 
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
 <?php wp_footer(); ?>

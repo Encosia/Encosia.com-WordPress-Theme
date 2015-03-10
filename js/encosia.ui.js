@@ -1,3 +1,13 @@
+import autosize from 'autosize';
+import 'colorbox';
+
+import './encosia.ui.header';
+import './encosia.ui.sidebar';
+import './encosia.ui.ads';
+import './encosia.ui.twitter';
+import './encosia.ui.comments';
+import './encosia.analytics';
+
 // Initialize image zooming, but limit that slow selector to links in the post area.
 $('.post').find('a[rel=attachment]').colorbox({ rel: 'nofollow' });
 
@@ -26,9 +36,7 @@ $('.comment-reply-link').on('click', function(evt) {
   addComment.moveForm('comment-' + commentId, commentId, 'respond', postId);
 });
 
-if (document.getElementById('comment')) {
-  autosize(document.getElementById('comment'));
-}
+autosize(document.getElementById('comment'));
 
 // AddThis
 (function() {

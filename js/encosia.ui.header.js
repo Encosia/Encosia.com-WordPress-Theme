@@ -1,3 +1,6 @@
+import 'js-throttle-debounce';
+import Modernizr from 'modernizr';
+
 (function() {
     var init = function() {
         $(window).off('scroll');
@@ -10,9 +13,6 @@
 
             var handleScroll = function (evt) {
                 DY = lastY - $(window).scrollTop();
-
-                console.log(DY);
-
 
                 if (lastY > 100 && DY <= 0) {
                     $headerContainer.addClass('collapsed');

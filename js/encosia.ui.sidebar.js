@@ -1,8 +1,10 @@
+import 'jquery.easing';
+
 (function() {
   $.ajax({
     url: '//encosia-popular-posts-api.azurewebsites.net?callback=?',
     dataType: 'jsonp',
-    success: function(stats) {
+    success: (stats) => {
       stats = stats[0].dates[0].items;
 
       var $ul = $('<ul>'),
@@ -51,9 +53,7 @@
 
       $(this).prepend($bar);
 
-      setTimeout(function() {
-        $bar.animate({ width: width + '%' }, 2000, 'easeOutExpo');
-      }, 2000);
+      setTimeout(() => { $bar.animate({ width: width + '%' }, 2000, 'easeOutExpo'); }, 2000);
     });
   });
 })();
