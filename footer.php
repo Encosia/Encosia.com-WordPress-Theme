@@ -3,7 +3,7 @@
 
     <script>var jQueryLoadStart = new Date().getTime();</script>
     <?php if (rand(1, 100) > 50) { ?>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
       if (typeof jQuery === 'undefined') {
         document.write(unescape('%3Cscript%20src%3D%22/blog/wp-content/themes/encosia/js/dist/jquery-1.9.1.min.js%22%3E%3C/script%3E'));
