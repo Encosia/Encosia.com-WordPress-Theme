@@ -5,6 +5,9 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     jshint: {
+      options: {
+        esnext: true
+      },
       files: ['js/encosia.*.js']
     },
     uglify: {
