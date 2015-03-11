@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="/blog/wp-content/themes/encosia/css/styles.css" type="text/css" media="screen" />
     <!-- endbuild -->
     <link href="//fonts.googleapis.com/css?family=Merriweather:400italic,400,700|Archivo+Narrow:400,400italic" rel="stylesheet" type="text/css">
+      <!--[if lt IE 9]>
+          <script src="/blog/wp-content/themes/encosia/js/vendor/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
     <link rel="alternate" type="application/rss+xml" title="Posts" href="http://feeds.encosia.com/Encosia" />
     <link rel="alternate" type="application/rss+xml" title="Comments" href="http://feeds.encosia.com/EncosiaComments" />
     <link rel="pingback" href="http://encosia.com/blog/xmlrpc.php" />
