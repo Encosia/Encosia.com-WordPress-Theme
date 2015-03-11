@@ -1,3 +1,5 @@
+import 'matchMedia';
+
 // Carbon Ads
 (function() {
   var z = document.createElement("script");
@@ -29,7 +31,7 @@ $(window).on('load', () => {
     }
   };
 
-  if (Modernizr.mq('(min-width: 768px)')) {
+  if (matchMedia('(min-width: 768px)')) {
     // Wait five seconds after window.load and check to make sure the ad is displayed.
     setTimeout(adNag, 5000);
   }

@@ -1,11 +1,11 @@
 import 'js-throttle-debounce';
-import Modernizr from 'modernizr';
+import 'matchMedia';
 
 (function() {
     var init = function() {
         $(window).off('scroll');
 
-        if (Modernizr.mq('(min-width: 768px)')) {
+        if (matchMedia('(min-width: 768px)')) {
             // Pre-calculate some constants.
             var lastY = $(window).scrollTop(),
                 DY = lastY - $(window).scrollTop(),
