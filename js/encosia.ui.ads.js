@@ -11,8 +11,8 @@
 })();
 
 // Even developers need to eat...
-$(window).on('load', function() {
-  var adNag = function() {
+$(window).on('load', () => {
+  var adNag = () => {
     // If the HTML content of the #azcarbon placeholder div
     //  is anything but empty, the ad has been loaded.
     var adLoaded = $('#azcarbon').html() !== '';
@@ -34,3 +34,5 @@ $(window).on('load', function() {
     setTimeout(adNag, 5000);
   }
 });
+
+export default { };
