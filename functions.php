@@ -15,7 +15,7 @@ function custom_comments($comment, $args, $depth) {
 
   ?><div id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
       <div class="comment-header">
-        <div class="comment-author vcard"><strong><?php comment_author_link() ?></strong><?php if(comment_subscription_status()) { ?> <img src="/blog/images/comment-subscription.png" width="21" height="8" alt="Subscribed to followup comments" /><?php } ?></div>
+        <div class="comment-author vcard fn"><strong><?php comment_author_link() ?></strong></div>
         <div class="comment-date"><?php comment_time() ?> - <?php comment_date() ?></div>
       </div>
 
