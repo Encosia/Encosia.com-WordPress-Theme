@@ -25,7 +25,10 @@
   </head>
 <body>
     <div id="page">
-        <div class="padding-top"></div>
+        <div class="padding-top">
+            <div class="padding-top-content"></div>
+            <div class="padding-top-sidebar"></div>
+        </div>
 
         <div class="header-container">
             <header>
