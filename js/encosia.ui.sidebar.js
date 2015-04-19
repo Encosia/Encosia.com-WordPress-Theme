@@ -3,7 +3,7 @@
     url: '//encosia-popular-posts-api.azurewebsites.net?callback=?',
     dataType: 'jsonp',
     success: function(stats) {
-      stats = stats[0].dates[0].items;
+      stats = stats[0].dates[0].items.slice(0, 7);
 
       var $ul = $('<ul>'),
           max = 0;
