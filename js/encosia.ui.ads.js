@@ -1,16 +1,3 @@
-// Carbon Ads
-(function() {
-  var z = document.createElement("script");
-
-  z.type = 'text/javascript';
-  z.id = '_carbonads_js';  
-  z.async = true;
-  z.src = '//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=encosiacom';
-
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(z, s);
-})();
-
 // Even developers need to eat...
 $(window).on('load', function() {
   var adNag = function() {
