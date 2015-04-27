@@ -2,9 +2,10 @@
 (function() {
   var z = document.createElement("script");
 
-  z.type = "text/javascript";
+  z.type = 'text/javascript';
+  z.id = '_carbonads_js';  
   z.async = true;
-  z.src = "//engine.carbonads.com/z/15480/azcarbon_2_1_0_HORIZDARK";
+  z.src = '//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=encosiacom';
 
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(z, s);
