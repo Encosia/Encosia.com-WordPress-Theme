@@ -17,7 +17,7 @@
         });
 
         var $a = $('<a>', {
-          href: stats[i].url,
+          href: stats[i].url + '?ref=sidebar_most_popular',
           text: stats[i].title.replace(' | Encosia', '')
         });
 
