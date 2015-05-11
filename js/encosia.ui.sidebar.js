@@ -16,8 +16,11 @@
           }
         });
 
+        // Generated at: https://support.google.com/analytics/answer/1033867?hl=en
+        var trackingParameters = '?utm_source=encosia&utm_medium=web&utm_content=most_popular&utm_campaign=sidebar';
+
         var $a = $('<a>', {
-          href: stats[i].url,
+          href: stats[i].url + trackingParameters,
           text: stats[i].title.replace(' | Encosia', '')
         });
 
