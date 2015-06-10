@@ -7,7 +7,7 @@
     </div>
 
     <div id="carbonads-container">
-      <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=encosiacom" id="_carbonads_js"></script>
+      <script type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=encosiacom" id="_carbonads_js"></script>
     </div>
 
     <div id="MostPopular" class="sidebarBox">
