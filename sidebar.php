@@ -7,7 +7,11 @@
     </div>
 
     <div id="carbonads-container">
-      <script type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=encosiacom" id="_carbonads_js"></script>
+    <script>
+      if (!window.getComputedStyle || window.getComputedStyle(document.getElementById('sidebar')).display === 'block') {
+        document.write('<script src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=encosiacom" id="_carbonads_js"><\/script>');
+      }
+    </script>
     </div>
 
     <div id="MostPopular" class="sidebarBox">
