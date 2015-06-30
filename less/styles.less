@@ -30,11 +30,11 @@ h2, h3, nav a, #content h4, #sidebar h3 {
 
 h2 {
   color: #000;
-  margin: 0 0 2px;
+  margin: 4px 0 0 2px;
   border-bottom: 1px solid #CCCCCC;
   font-size: 22px;
   font-weight: 700;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 
   a, a:visited, a:hover {
     color: #000;
@@ -120,7 +120,7 @@ code {
     padding-top: 0;
 
     .padding-top {
-      height: 130px;
+      height: 60px;
 
       .padding-top-content {
         background-color: #fff;
@@ -144,6 +144,9 @@ code {
       color: #999999;
     }
   }
+
+  // Match selector specificity from above, due to pesky ID in selector.
+  .front #page .padding-top { height: 135px; }
 }
 
 @import "header";

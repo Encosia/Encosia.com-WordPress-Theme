@@ -23,7 +23,7 @@
   <?php } ?>
   <?php wp_head(); ?>
   </head>
-<body>
+<body<?php if (is_front_page()) { echo ' class="front"'; } ?>>
     <div id="page">
         <div class="padding-top">
             <div class="padding-top-content"></div>
