@@ -6,14 +6,6 @@
       </form>
     </div>
 
-    <div id="carbonads-container">
-    <script>
-      if (!window.getComputedStyle || window.getComputedStyle(document.getElementById('sidebar')).display === 'block') {
-        document.write('<script src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=encosiacom" id="_carbonads_js"><\/script>');
-      }
-    </script>
-    </div>
-
     <div id="MostPopular" class="sidebarBox">
       <h3>Popular content this month</h3>
 

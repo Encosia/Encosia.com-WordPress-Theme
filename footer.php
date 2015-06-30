@@ -35,7 +35,6 @@
     <script src="/blog/wp-content/themes/encosia/js/encosia.ui.header.js"></script>
     <script src="/blog/wp-content/themes/encosia/js/encosia.ui.sidebar.js"></script>
     <script src="/blog/wp-content/themes/encosia/js/encosia.ui.twitter.js"></script>
-    <script src="/blog/wp-content/themes/encosia/js/encosia.ui.ads.js"></script>
     <script src="/blog/wp-content/themes/encosia/js/encosia.ui.comments.js"></script>
     <!-- endbuild -->
 
