@@ -6,16 +6,6 @@
       </form>
     </div>
 
-
-    <!-- Encosia - Sidebar -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:336px;height:280px"
-         data-ad-client="ca-pub-7528570989921483"
-         data-ad-slot="9337275381"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
     <div id="MostPopular" class="sidebarBox">
       <h3>Popular content this month</h3>
 

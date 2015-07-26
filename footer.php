@@ -37,8 +37,6 @@
     <script src="/blog/wp-content/themes/encosia/js/encosia.ui.comments.js"></script>
     <!-- endbuild -->
 
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/34742ns.gif" /></p></noscript>
 <?php wp_footer(); ?>
 </body>
