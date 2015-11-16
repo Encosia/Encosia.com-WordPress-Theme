@@ -104,4 +104,18 @@ function encosia_deregister_plugin_assets_footer() {
   wp_dequeue_style('yarppWidgetCss');
 }
 add_action( 'wp_footer', 'encosia_deregister_plugin_assets_footer' );
+
+function encosia_content_feed($feed_type = null) {
+  if ( !$feed_type )
+    $feed_type = get_default_feed();
+
+  global $more;
+  $more_restore = $more;
+  $more = 0;
+  $content = apply_filters('the_content', get_the_content());
+  $more = $more_restore;
+  $content = str_replace(']]>', ']]& gt;', $content);
+  return $content;
+}
+add_filter('the_content_feed', 'encosia_content_feed');
 ?>
